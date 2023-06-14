@@ -22,7 +22,14 @@
       <div class="col-md-2">
         <div class="well">
           <h5>FAANG Stock selection:</h5>
-          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+          <select id="selDataset">
+            <option value="apple">Apple</option>
+            <option value="facebook">Facebook(Meta)</option>
+            <option value="amazon">Amazon</option>
+            <option value="netflix">Netflix</option>
+            <option value="google">Google</option>
+            <option value="snp500">S&P 500 Index</option>
+          </select>
         </div>
         <div class="panel panel-primary">
           <div class="panel-heading">
@@ -50,6 +57,7 @@
 
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="./static/js/data.js"></script>
   <script src="./static/js/app.js"></script>
 
   
