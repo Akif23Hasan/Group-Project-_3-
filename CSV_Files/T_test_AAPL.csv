@@ -1,0 +1,5 @@
+Stock symbol,GICS_Sector,t_value,p_value
+AAPL,Consumer_Discretionary,-0.711,0.48
+AAPL,Information_Technology,0.397,0.693
+AAPL,Consumer_Staples,-2.438,0.02
+AAPL,Communication_Services,3,0.007

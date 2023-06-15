@@ -1,14 +1,29 @@
 // Create an array of each country's numbers
-let apple = Object.values(data.apple);
-let facebook = Object.values(data.facebook);
-let amazon = Object.values(data.amazon);
-let google = Object.values(data.google);
-let netflix = Object.values(data.netflix);
-let snp500 = Object.values(data.snp500);
+let AAPL = Object.values(FAANG.AAPL);
+let AMZN = Object.values(FAANG.AMZN);
+let NFLX = Object.values(FAANG.NFLX);
+let GOOG = Object.values(FAANG.GOOG);
+let GOOGL = Object.values(FAANG.GOOGL);
+let FB = Object.values(FAANG.FB);
 
 // Create an array of category labels
-let labels = Object.keys(data.apple);
+let labels = Object.keys(FAANG.AAPL);
 
+// Display the default plot
+function init() {
+  let FAANG = [{
+    values: AAPL,
+    labels: labels,
+    type: "pie"
+  }];
+
+  let layout = {
+    height: 600,
+    width: 800
+  };
+
+  Plotly.newPlot("pie", FAANG, layout);
+}
 
 // On change to the DOM, call getData()
 d3.selectAll("#selDataset").on("change", getData);
@@ -21,27 +36,31 @@ function getData() {
   // Initialize an empty array for the country's data
   let data = [];
 
-  if (dataset == 'apple') {
-      data = apple;
+  if (dataset == 'AAPL') {
+    FAANG = AAPL;
   }
-  else if (dataset == 'facebook') {
-      data = facebook;
+  else if (dataset == 'AMZN') {
+    FAANG = AMZN;
   }
-  else if (dataset == 'google') {
-      data = google;
+  else if (dataset == 'NFLX') {
+    FAANG = NFLX;
   }
-  else if (dataset == 'amazon') {
-    data = amazon;
+  else if (dataset == 'GOOG') {
+    FAANG = GOOG;
   }
-  else if (dataset == 'netflix') {
-      data = netflix;
+  else if (dataset == 'GOOGL') {
+    FAANG = GOOGL;
   }
-  else if (dataset == 'snp500') {
-    data = snp500;
+  else if (dataset == 'FB') {
+    FAANG = FB;
   }
 // Call function to update the chart
-  updatePlotly(data);
+  updatePlotly(FAANG);
 }
 
-// Call the initialize function
+// Update the restyled plot's values
+function updatePlotly(newdata) {
+  Plotly.restyle("pie", "values", [newdata]);
+}
+
 init();
