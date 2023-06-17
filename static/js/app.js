@@ -1,3 +1,11 @@
+// Update the file path to the local JSON file
+const filePath = "DataFiles/4_Sector_Stocks.json";
+
+// Fetch the JSON data from the local file and console log it
+d3.json(filePath).then(function(data) {
+  console.log(data);
+});
+
 // Create an array of each country's numbers
 let AAPL = Object.values(FAANG.AAPL);
 let AMZN = Object.values(FAANG.AMZN);
