@@ -12,7 +12,7 @@ let labels = Object.keys(FAANG.AAPL);
 // Display the default plots
 function init() {
   let pieData = [{
-    values: AAPL,
+    values: AAPL.pct_change,
     labels: labels,
     type: "pie"
   }];
