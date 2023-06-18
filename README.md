@@ -32,5 +32,10 @@ To accomplish this, we will utilize the Polygon.io API to create a database of t
 * The project must include some level of user-driven interaction (e.g., menus, dropdowns, textboxes).
 * The final visualization should ideally include at least three views.
 
+## Project Steps
+* Need to add in dotpoints from data extraction to data transformation to visuldaition process
+* Tao and Suvi to update the actual sql code 
+* in the visulations bit show the images and potentially a GIF of the dashboard in action.
+
 ## GitHub
 * https://github.com/Akif23Hasan/Group8-Project-_3-FAANG_StockAnalysis
