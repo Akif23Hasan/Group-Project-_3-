@@ -6,6 +6,52 @@ d3.json(url).then(function(data) {
   console.log(data);
 });
 
+// Fetch the latest news headlines and summaries for the selected stock
+function fetchNews(stock) {
+  const apiKey = "Paste The API_Key From The api_keys.py file";
+  const newsUrl = `https://api.marketaux.com/v1/news/all?symbols=${stock}&filter_entities=true&language=en&sentiment=positive&api_token=${apiKey}`;
+  console.log(newsUrl);
+
+  fetch(newsUrl)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Failed to fetch news.");
+      }
+      return response.json();
+    })
+    .then(data => {
+      const articles = data.data.slice(0, 6); // Get the latest 6 articles
+
+      // Display the news headlines, summaries, and URLs
+      const newsTable = d3.select("#news-table");
+      newsTable.html(""); // Clear previous content
+      newsTable.style("border-collapse", "collapse"); // Add border-collapse style
+
+      const tableHeader = newsTable.append("tr");
+      tableHeader.append("th").text("Headline");
+      tableHeader.append("th").text("Summary");
+      tableHeader.append("th").text("Link");
+
+      articles.forEach(article => {
+        const headline = article.title;
+        const summary = article.description;
+        const url = article.url;
+
+        const tableRow = newsTable.append("tr");
+        tableRow.append("td").text(headline);
+        tableRow.append("td").text(summary);
+        tableRow.append("td").html(`<a href="${url}" target="_blank">Read Article</a>`);
+      });
+    })
+    .catch(error => {
+      console.log(error);
+      const newsTable = d3.select("#news-table");
+      newsTable.html(""); // Clear previous content
+      newsTable.append("tr").append("td").text("Failed to fetch news.");
+    });
+}
+
+
 // Starting the dashboard at opening the index up
 function init() {
   // Use D3 to select the dropdown menu
@@ -28,17 +74,19 @@ function init() {
     });
 
     // Set the first sample from the list and log the value of starting stock
-    let stock = filteredNames[0];
-    console.log(stock);
+    let startingstock = filteredNames[0];
+    console.log(startingstock);
 
     // Build the initial plots
-    // t_test_bar(stock);
-    // trade_bar(stock);
-    // pieChart(stock);
-    barChart(stock);
+    // t_test_bar(startingstock);
+    // trade_bar(startingstock);
+    pieChart(startingstock);
+    barChart(startingstock);
+
+    // Fetch news for the initial stock
+    fetchNews(startingstock);
   });
 }
-
 
 // Function that builds the line chart
 function barChart(stock) {
@@ -46,20 +94,35 @@ function barChart(stock) {
   d3.json(url).then((data) => {
     // Retrieve all sample data
     let stockData = data.metadata;
-    // Filter based on the value of the sample
+    // Filter based on the value of the stock
     let value = stockData.filter(result => result.Stock_symbol == stock)[0];
     // Get the opening and closing price
     let { start_price, end_price, pct_change } = value;
     // Log the data to the console
     console.log(start_price, end_price, pct_change);
 
-    // Set up the trace for the line chart
-    let trace = {
+    // Set up the trace for the bar chart
+    let trace1 = {
       x: ['Opening', 'Closing'],
       y: [start_price, end_price],
       type: "bar",
       marker: {
-        color: "blue"
+        color: ["#B3C100", "#CED2CC"] // Earth tone colors for bars
+      },
+      name: "Price"
+    };
+
+    // Set up the trace for the pct_change line chart with trendline
+    let trace2 = {
+      x: ['Opening', 'Closing'],
+      y: [pct_change],
+      type: "scatter",
+      mode: "lines+markers",
+      yaxis: 'y2',
+      name: "Percent Change",
+      line: {
+        shape: 'spline',
+        color: "#23282D" // Earth tone color for the line
       }
     };
 
@@ -67,34 +130,101 @@ function barChart(stock) {
     let layout = {
       title: "Stock Opening and Closing Prices",
       xaxis: {
-        title: "Date"
+        title: "Date",
+        ticktext: ['Opening', 'Closing'],
+        tickvals: [0, 1]
       },
       yaxis: {
         title: "Price"
+      },
+      yaxis2: {
+        title: "Percent Change",
+        overlaying: 'y',
+        side: 'right'
       }
     };
 
-    // Call Plotly to plot the line chart
-    Plotly.newPlot("bar", [trace], layout);
+    // Call Plotly to plot the bar chart with the pct_change line chart
+    Plotly.newPlot("bar", [trace1, trace2], layout);
+  });
+}
+
+// Function that builds the pie chart
+function pieChart(stock) {
+  // Use D3 to retrieve all of the data
+  d3.json(url).then((data) => {
+    // Retrieve all sample data
+    let stockData = data.metadata;
+    // Filter based on the value of the stock
+    let selectedStock = stockData.filter(result => result.Stock_symbol === stock)[0];
+    // Get the trade dollar volume of the selected stock
+    let selectedStockVolume = selectedStock.trade_dollar_volume;
+
+    // Filter out the selected stock from each GICS_Sector and calculate the total trade dollar volume for each sector
+    let sectorVolumes = {};
+    stockData.forEach((result) => {
+      if (result.Stock_symbol !== stock) {
+        let sector = result.GICS_Sector;
+        if (sector in sectorVolumes) {
+          sectorVolumes[sector] += result.trade_dollar_volume;
+        } else {
+          sectorVolumes[sector] = result.trade_dollar_volume;
+        }
+      }
+    });
+
+    // Add the selected stock's trade volume to the sector volumes
+    sectorVolumes[`${stock} (Selected Stock)`] = selectedStockVolume;
+
+    // Prepare data for the pie chart
+    let labels = Object.keys(sectorVolumes);
+    let values = Object.values(sectorVolumes);
+
+    // Set up the trace for the pie chart
+    let trace = {
+      labels: labels,
+      values: values,
+      type: "pie",
+      marker: {
+        colors: ["#4CB5F5", "#1F3F49", "#D32D41", "#6AB187"] // Earth tone colors for pie slices
+      }
+    };
+
+    // Setup the layout
+    let layout = {
+      title: "Trade Dollar Volume by GICS Sector"
+    };
+
+    // Call Plotly to plot the pie chart
+    Plotly.newPlot("pie", [trace], layout);
   });
 }
 
 // Function that updates dashboard when sample is changed
-function optionChanged(stock) {
+function optionChanged(value) {
   // Log the new value
-  console.log(stock);
+  console.log(value);
   // Call all functions
-  //t_test_bar(stock);
-  //trade_bar(stock);
-  //pieChart(stock);
-  barChart(stock);
+  // t_test_bar(value);
+  // trade_bar(value);
+  pieChart(value);
+  barChart(value);
+  // Fetch news for the selected stock
+  fetchNews(value);
 }
-
 
 // Call the initialize function
 init();
 
 
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Graham's Code////Graham's Code////Graham's Code////Graham's Code////Graham's Code////Graham's Code////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Graham's Code////Graham's Code////Graham's Code////Graham's Code////Graham's Code////Graham's Code////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////

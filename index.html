@@ -22,9 +22,10 @@
       <div class="col-md-2">
         <div class="well">
           <h5>FAANG Stock selection:</h5>
-          <select id="selDataset" onchange="optionChanged(this.stock)"></select>
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
-        </div>
+      </div>
+      <div class="col-md-2">
         <div class="panel panel-primary">
           <div class="panel-heading">
             <h3 class="panel-title">Stock Info</h3>
@@ -32,24 +33,51 @@
           <div id="sample-metadata" class="panel-body"></div>
         </div>
       </div>
-      <div class="col-md-1 col-md-offset-1">
+      <div class="col-md-2 col-md-offset-1">
         <div id="t_test_bar"></div>
         <div id="trade_bar"></div>
       </div>
-      <div class="col-md-1">
+      <div class="col-md-7">
         <div id="pie"></div>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-7">
         <div id="bar"></div>
+      </div>
+    </div>
+    <!-- Add a new row for the news headlines -->
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Latest Headlines</h2>
+        <table id="news-table" class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th>Headline</th>
+              <th>Summary</th>
+              <th>Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Table rows with border -->
+            <tr class="table-row">
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+            </tr>
+            <tr class="table-row">
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+            </tr>
+            <!-- Add more rows as needed -->
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
 
-  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="./static/js/app.js"></script>
 </body>
 
 </html>
-
-
