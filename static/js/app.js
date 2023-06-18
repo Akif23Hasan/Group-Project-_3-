@@ -21,7 +21,7 @@ function init() {
       ["AAPL", "AMZN", "NFLX", "GOOG", "GOOGL", "FB"].includes(Stock_symbol)
     );
 
-    // Add filtered samples to dropdown menu and log the value of id for each iteration of the loop
+    // Add filtered stocks to dropdown menu and log the value of stock symbol for each iteration of the loop
     filteredNames.forEach((Stock_symbol) => {
       console.log(Stock_symbol);
       dropdownMenu.append("option").text(Stock_symbol).property("value", Stock_symbol);
@@ -44,15 +44,19 @@ function init() {
 function barChart(stock) {
   // Use D3 to retrieve all of the data
   d3.json(url).then((data) => {
-
-    // Extract opening and closing prices
-    let openingPrice = stock.start_price;
-    let closingPrice = stock.end_price;
+    // Retrieve all sample data
+    let stockData = data.metadata;
+    // Filter based on the value of the sample
+    let value = stockData.filter(result => result.Stock_symbol == stock)[0];
+    // Get the opening and closing price
+    let { start_price, end_price, pct_change } = value;
+    // Log the data to the console
+    console.log(start_price, end_price, pct_change);
 
     // Set up the trace for the line chart
     let trace = {
       x: ['Opening', 'Closing'],
-      y: [openingPrice, closingPrice],
+      y: [start_price, end_price],
       type: "bar",
       marker: {
         color: "blue"
