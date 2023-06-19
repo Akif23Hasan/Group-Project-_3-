@@ -8,7 +8,7 @@ d3.json(sector_url).then(function(data) {
 
 // Fetch the latest news headlines and summaries for the selected stock
 function fetchNews(stock) {
-  const apiKey = "Paste The API_Key From The api_keys.py file";
+  const apiKey = "i4C1V3RjLgFoMzPvyapdYUYR4Cif6zORLppfZVsS";
   const newsUrl = `https://api.marketaux.com/v1/news/all?symbols=${stock}&filter_entities=true&language=en&sentiment=positive&api_token=${apiKey}`;
   console.log(newsUrl);
 
@@ -20,7 +20,7 @@ function fetchNews(stock) {
       return response.json();
     })
     .then(data => {
-      const articles = data.data.slice(0, 6); // Get the latest 6 articles
+      const articles = data.data.slice(0, 5); // Get the latest 5 articles
 
       // Display the news headlines, summaries, and URLs
       const newsTable = d3.select("#news-table");
@@ -28,20 +28,43 @@ function fetchNews(stock) {
       newsTable.style("border-collapse", "collapse"); // Add border-collapse style
 
       const tableHeader = newsTable.append("tr");
-      tableHeader.append("th").text("Headline");
-      tableHeader.append("th").text("Summary");
-      tableHeader.append("th").text("Link");
+      tableHeader.selectAll("th")
+        .data(["Headline", "Summary", "Link"])
+        .enter()
+        .append("th")
+        .text(d => d)
+        .style("border", "1px solid black")
+        .style("text-align", "center");
 
-      articles.forEach(article => {
-        const headline = article.title;
-        const summary = article.description;
-        const url = article.url;
+      const tableRows = newsTable.selectAll("tr")
+        .data(articles)
+        .enter()
+        .append("tr");
 
-        const tableRow = newsTable.append("tr");
-        tableRow.append("td").text(headline);
-        tableRow.append("td").text(summary);
-        tableRow.append("td").html(`<a href="${url}" target="_blank">Read Article</a>`);
-      });
+      tableRows.selectAll("td")
+        .data(article => [article.title, article.description, article.url])
+        .enter()
+        .append("td")
+        .text(d => d)
+        .style("border", "1px solid black")
+        .style("text-align", "center");
+
+      tableRows.select("td:last-child")
+        .html(article => `<a href="${article.url}" target="_blank">Read Article</a>`);
+        
+      // Add empty rows if there are fewer than 5 articles
+      const emptyRowsCount = 5 - articles.length;
+      if (emptyRowsCount > 0) {
+        for (let i = 0; i < emptyRowsCount; i++) {
+          newsTable.append("tr")
+            .selectAll("td")
+            .data(["", "", ""])
+            .enter()
+            .append("td")
+            .style("border", "1px solid black")
+            .style("text-align", "center");
+        }
+      }
     })
     .catch(error => {
       console.log(error);
@@ -49,6 +72,17 @@ function fetchNews(stock) {
       newsTable.html(""); // Clear previous content
       newsTable.append("tr").append("td").text("Failed to fetch news.");
     });
+}
+
+
+// Function to display the logo with the specified image URL
+function displayLogo(logoUrl) {
+  const logoContainer = d3.select("#logo-container");
+  logoContainer.html(""); // Clear previous content
+  logoContainer.append("img")
+    .attr("src", logoUrl)
+    .style("max-width", "200px")
+    .style("max-height", "200px");
 }
 
 
@@ -84,7 +118,7 @@ function init() {
     barChart(startingstock);
 
     // Fetch news for the initial stock
-    // fetchNews(startingstock);
+    fetchNews(startingstock);
   });
 }
 
