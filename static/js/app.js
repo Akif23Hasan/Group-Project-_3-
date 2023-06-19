@@ -8,7 +8,7 @@ d3.json(sector_url).then(function(data) {
 
 // Fetch the latest news headlines and summaries for the selected stock
 function fetchNews(stock) {
-  const apiKey = "i4C1V3RjLgFoMzPvyapdYUYR4Cif6zORLppfZVsS";
+  const apiKey = "PasteTheApiKeyHereBeforeRunning";
   const newsUrl = `https://api.marketaux.com/v1/news/all?symbols=${stock}&filter_entities=true&language=en&sentiment=positive&api_token=${apiKey}`;
   console.log(newsUrl);
 
@@ -74,18 +74,6 @@ function fetchNews(stock) {
     });
 }
 
-
-// Function to display the logo with the specified image URL
-function displayLogo(logoUrl) {
-  const logoContainer = d3.select("#logo-container");
-  logoContainer.html(""); // Clear previous content
-  logoContainer.append("img")
-    .attr("src", logoUrl)
-    .style("max-width", "200px")
-    .style("max-height", "200px");
-}
-
-
 // Starting the dashboard at opening the index up
 function init() {
   // Use D3 to select the dropdown menu
@@ -96,20 +84,31 @@ function init() {
     // Set a variable for the sample names
     let names = data.names;
 
+    // Define an object to map stock symbols to company names
+    let companyNames = {
+      AAPL: "Apple",
+      AMZN: "Amazon",
+      NFLX: "Netflix",
+      GOOG: "Alphabet(Class C)",
+      GOOGL: "Alphabet(Class A)",
+      FB: "Facebook."
+    };
+
     // Filter stock symbols to only include "AAPL", "AMZN", "NFLX", "GOOG", "GOOGL", and "FB"
     let filteredNames = names.filter((Stock_symbol) =>
       ["AAPL", "AMZN", "NFLX", "GOOG", "GOOGL", "FB"].includes(Stock_symbol)
     );
 
-    // Add filtered stocks to dropdown menu and log the value of stock symbol for each iteration of the loop
+    // Add filtered stocks to dropdown menu with company names
     filteredNames.forEach((Stock_symbol) => {
-      // console.log(Stock_symbol);
-      dropdownMenu.append("option").text(Stock_symbol).property("value", Stock_symbol);
+      dropdownMenu
+        .append("option")
+        .text(`${Stock_symbol} - ${companyNames[Stock_symbol]}`)
+        .property("value", Stock_symbol);
     });
 
-    // Set the first sample from the list and log the value of starting stock
+    // Set the first sample from the list
     let startingstock = filteredNames[0];
-    // console.log(startingstock);
 
     // Build the initial plots
     t_test_bar(startingstock);
@@ -119,8 +118,12 @@ function init() {
 
     // Fetch news for the initial stock
     fetchNews(startingstock);
+
+    // Fetch image and display it
+    imagelogo(startingstock);
   });
 }
+
 
 // Function that builds the line chart
 function barChart(stock) {
@@ -367,6 +370,32 @@ function trade_bar(stock) {
   });
 }
 
+// Function to display the logo for the stock selected
+function imagelogo(stock) {
+  let imageUrl = "";
+
+  if (stock === "AAPL") {
+    imageUrl = "https://img.freepik.com/free-icon/mac-os_318-10374.jpg";
+  } else if (stock === "AMZN") {
+    imageUrl = "https://logowik.com/content/uploads/images/amazon6707.jpg";
+  } else if (stock === "NFLX") {
+    imageUrl = "https://loodibee.com/wp-content/uploads/Netflix-N-Symbol-logo.png";
+  } else if (stock === "GOOG" || stock === "GOOGL") {
+    imageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2008px-Google_%22G%22_Logo.svg.png";
+  } else if (stock === "FB") {
+    imageUrl = "https://img.freepik.com/free-icon/facebook_318-157463.jpg";
+  }
+
+  // Display the image
+  displayImage(imageUrl);
+
+  function displayImage(url) {
+    // Select the image element and update its source
+    const imageElement = d3.select("#logo-image");
+    imageElement.attr("src", url);
+  }
+}
+
 
 // Fetching the daily stock 
 // function fetchCurrentStock(stock) {
@@ -398,6 +427,9 @@ function optionChanged(value) {
   // Fetch news for the selected stock
   fetchNews(value);
   // fetchCurrentStock(value)
+  //Fetch image and display it
+  imagelogo(value)
+  
 }
 
 // Call the initialize function
