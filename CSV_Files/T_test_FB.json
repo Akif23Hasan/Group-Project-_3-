@@ -1,0 +1,34 @@
+{
+    "names": [
+        "FB",
+        "FB",
+        "FB",
+        "FB"
+    ],
+    "metadata": [
+        {
+            "Stock_symbol": "FB",
+            "GICS_Sector": "Consumer_Discretionary",
+            "t_value": -1.261,
+            "p_value": 0.213
+        },
+        {
+            "Stock_symbol": "FB",
+            "GICS_Sector": "Information_Technology",
+            "t_value": -0.676,
+            "p_value": 0.501
+        },
+        {
+            "Stock_symbol": "FB",
+            "GICS_Sector": "Consumer_Staples",
+            "t_value": -3.051,
+            "p_value": 0.005
+        },
+        {
+            "Stock_symbol": "FB",
+            "GICS_Sector": "Communication_Services",
+            "t_value": 2.654,
+            "p_value": 0.016
+        }
+    ]
+}

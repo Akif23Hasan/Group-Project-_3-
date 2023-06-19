@@ -1,0 +1,34 @@
+{
+    "names": [
+        "GOOGL",
+        "GOOGL",
+        "GOOGL",
+        "GOOGL"
+    ],
+    "metadata": [
+        {
+            "Stock_symbol": "GOOGL",
+            "GICS_Sector": "Consumer_Discretionary",
+            "t_value": -6.177,
+            "p_value": 0.0
+        },
+        {
+            "Stock_symbol": "GOOGL",
+            "GICS_Sector": "Information_Technology",
+            "t_value": -10.264,
+            "p_value": 0.0
+        },
+        {
+            "Stock_symbol": "GOOGL",
+            "GICS_Sector": "Consumer_Staples",
+            "t_value": -8.524,
+            "p_value": 0.0
+        },
+        {
+            "Stock_symbol": "GOOGL",
+            "GICS_Sector": "Communication_Services",
+            "t_value": -0.447,
+            "p_value": 0.66
+        }
+    ]
+}

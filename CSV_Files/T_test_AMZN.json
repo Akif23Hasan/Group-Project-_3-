@@ -1,0 +1,34 @@
+{
+    "names": [
+        "AMZN",
+        "AMZN",
+        "AMZN",
+        "AMZN"
+    ],
+    "metadata": [
+        {
+            "Stock_symbol": "AMZN",
+            "GICS_Sector": "Consumer_Discretionary",
+            "t_value": -9.479,
+            "p_value": 0.0
+        },
+        {
+            "Stock_symbol": "AMZN",
+            "GICS_Sector": "Information_Technology",
+            "t_value": -16.705,
+            "p_value": 0.0
+        },
+        {
+            "Stock_symbol": "AMZN",
+            "GICS_Sector": "Consumer_Staples",
+            "t_value": -12.201,
+            "p_value": 0.0
+        },
+        {
+            "Stock_symbol": "AMZN",
+            "GICS_Sector": "Communication_Services",
+            "t_value": -2.529,
+            "p_value": 0.02
+        }
+    ]
+}

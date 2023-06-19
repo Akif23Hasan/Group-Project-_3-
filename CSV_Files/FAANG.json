@@ -1,0 +1,48 @@
+{
+    "names": [
+        "AAPL",
+        "AMZN",
+        "NFLX",
+        "GOOG",
+        "GOOGL",
+        "FB"
+    ],
+    "metadata": [
+        {
+            "Stock_symbol": "AAPL",
+            "GICS_Sector": "178.44",
+            "t_value": 166.17,
+            "p_value": -6.8763
+        },
+        {
+            "Stock_symbol": "AMZN",
+            "GICS_Sector": "168.3465",
+            "t_value": 102.41,
+            "p_value": -39.1671
+        },
+        {
+            "Stock_symbol": "NFLX",
+            "GICS_Sector": "391.5",
+            "t_value": 348.28,
+            "p_value": -11.0396
+        },
+        {
+            "Stock_symbol": "GOOG",
+            "GICS_Sector": "143.6425",
+            "t_value": 104.91,
+            "p_value": -26.9645
+        },
+        {
+            "Stock_symbol": "GOOGL",
+            "GICS_Sector": "142.9715",
+            "t_value": 104.36,
+            "p_value": -27.0064
+        },
+        {
+            "Stock_symbol": "FB",
+            "GICS_Sector": "233.89",
+            "t_value": 213.07,
+            "p_value": -8.9016
+        }
+    ]
+}

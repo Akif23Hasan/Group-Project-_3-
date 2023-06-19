@@ -1,7 +1,8 @@
 import os
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 import json
 from flask_cors import CORS
+import csv
 
 #################################################
 # Flask Setup
@@ -9,33 +10,35 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/data', methods=['GET'])
-def get_data():
+
+#################################################
+# Flask Routes
+#################################################
+
+@app.route('/api/v1.0/Four Sector Stocks', methods=['GET'])
+def sector_stocks():
     
     with open("Four_Sector_Stocks.json") as json_file:
         data = json.load(json_file)
     return jsonify(data)
+
+
+@app.route('/api/v1.0/T-Test', methods=['GET'])
+def hyp_test():
     
+    with open("FAANG_T_Test.json") as json_file:
+        data = json.load(json_file)
+    return jsonify(data)
+
     
+@app.route("/")
+def welcome():
+    return (
+        f"Welcome to the FAANG API!<br/>"
+        f"Available Routes:<br/>"
+        f"/api/v1.0/Four Sector Stocks<br/>"
+        f"/api/v1.0/T-Test<br/>"
+    )  
     
-    
-    # Get the absolute path to the JSON file
-    # file_path = os.path.join(os.path.dirname(__file__), 'static', 'js', 'DataFiles', 'Four_Sector_Stocks.json')
-
-    # # Check if the JSON file exists
-    # if os.path.exists(file_path):
-    #     # Read the JSON data from the file
-    #     with open(file_path, 'r') as file:
-    #         data = file.read()
-
-    #     # Remove newline characters from the JSON data
-    #     data = data.replace('\n', '')
-
-    #     # Return the JSON data as the API response
-    #     return jsonify(data)
-    # else:
-    #     return 'Data not found', 404
-
-
 if __name__ == '__main__':
-    app.run()
+   app.run(debug=True)

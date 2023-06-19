@@ -191,1873 +191,1125 @@
     "metadata": [
         {
             "Stock_symbol": "ADM",
-            "start_price": 90.43,
-            "end_price": 80.42,
-            "pct_change": -11.0693,
-            "sector_pct_change": 1.1894,
-            "stock_trade_volume": 2094556.0,
-            "trade_dollar_volume": 168444193.5,
-            "GICS_Sector": "Consumer_Staples"
+            "GICS_Sector": "90.43",
+            "t_value": 80.42,
+            "p_value": -11.0693
         },
         {
             "Stock_symbol": "MO",
-            "start_price": 52.72,
-            "end_price": 44.98,
-            "pct_change": -14.6813,
-            "sector_pct_change": 1.1894,
-            "stock_trade_volume": 8385812.0,
-            "trade_dollar_volume": 377193823.8,
-            "GICS_Sector": "Consumer_Staples"
+            "GICS_Sector": "52.72",
+            "t_value": 44.98,
+            "p_value": -14.6813
         },
         {
             "Stock_symbol": "BF.B",
-            "start_price": 67.39,
-            "end_price": 64.08,
-            "pct_change": -4.9117,
-            "sector_pct_change": 1.1894,
-            "stock_trade_volume": 1291988.0,
-            "trade_dollar_volume": 82790591.04,
-            "GICS_Sector": "Consumer_Staples"
+            "GICS_Sector": "67.39",
+            "t_value": 64.08,
+            "p_value": -4.9117
         },
         {
             "Stock_symbol": "CPB",
-            "start_price": 44.99,
-            "end_price": 55.15,
-            "pct_change": 22.5828,
-            "sector_pct_change": 1.1894,
-            "stock_trade_volume": 1858039.0,
-            "trade_dollar_volume": 102470850.9,
-            "GICS_Sector": "Consumer_Staples"
+            "GICS_Sector": "44.99",
+            "t_value": 55.15,
+            "p_value": 22.5828
         },
         {
             "Stock_symbol": "CHD",
-            "start_price": 100.81,
-            "end_price": 88.87,
-            "pct_change": -11.8441,
-            "sector_pct_change": 1.1894,
-            "stock_trade_volume": 1363162.0,
-            "trade_dollar_volume": 121144206.9,
-            "GICS_Sector": "Consumer_Staples"
+            "GICS_Sector": "100.81",
+            "t_value": 88.87,
+            "p_value": -11.8441
         },
         {
             "Stock_symbol": "CLX",
-            "start_price": 145.0,
-            "end_price": 156.75,
-            "pct_change": 8.1034,
-            "sector_pct_change": 1.1894,
-            "stock_trade_volume": 1838253.0,
-            "trade_dollar_volume": 288146157.8,
-            "GICS_Sector": "Consumer_Staples"
+            "GICS_Sector": "145",
+            "t_value": 156.75,
+            "p_value": 8.1034
         },
         {
             "Stock_symbol": "KO",
-            "start_price": 62.54,
-            "end_price": 62.4,
-            "pct_change": -0.2239,
-            "sector_pct_change": 1.1894,
-            "stock_trade_volume": 12300660.0,
-            "trade_dollar_volume": 767561184.0,
-            "GICS_Sector": "Consumer_Staples"
+            "GICS_Sector": "62.54",
+            "t_value": 62.4,
+            "p_value": -0.2239
         },
         {
             "Stock_symbol": "CL",
-            "start_price": 76.59,
-            "end_price": 75.36,
-            "pct_change": -1.606,
-            "sector_pct_change": 1.1894,
-            "stock_trade_volume": 3188684.0,
-            "trade_dollar_volume": 240299226.2,
-            "GICS_Sector": "Consumer_Staples"
+            "GICS_Sector": "76.59",
+            "t_value": 75.36,
+            "p_value": -1.606
         },
         {
             "Stock_symbol": "CAG",
-            "start_price": 34.12,
-            "end_price": 37.44,
-            "pct_change": 9.7304,
-            "sector_pct_change": 1.1894,
-            "stock_trade_volume": 6459217.0,
-            "trade_dollar_volume": 241833084.5,
-            "GICS_Sector": "Consumer_Staples"
+            "GICS_Sector": "34.12",
+            "t_value": 37.44,
+            "p_value": 9.7304
         },
         {
             "Stock_symbol": "STZ",
-            "start_price": 229.71,
-            "end_price": 225.42,
-            "pct_change": -1.8676,
-            "sector_pct_change": 1.1894,
-            "stock_trade_volume": 1171249.0,
-            "trade_dollar_volume": 264022949.6,
-            "GICS_Sector": "Consumer_Staples"
+            "GICS_Sector": "229.71",
+            "t_value": 225.42,
+            "p_value": -1.8676
         },
         {
             "Stock_symbol": "COST",
-            "start_price": 575.13,
-            "end_price": 497.03,
-            "pct_change": -13.5795,
-            "sector_pct_change": 1.1894,
-            "stock_trade_volume": 1804653.0,
-            "trade_dollar_volume": 896966680.6,
-            "GICS_Sector": "Consumer_Staples"
+            "GICS_Sector": "575.13",
+            "t_value": 497.03,
+            "p_value": -13.5795
         },
         {
             "Stock_symbol": "EL",
-            "start_price": 278.62,
-            "end_price": 246.79,
-            "pct_change": -11.4242,
-            "sector_pct_change": 1.1894,
-            "stock_trade_volume": 1333526.0,
-            "trade_dollar_volume": 329100881.5,
-            "GICS_Sector": "Consumer_Staples"
+            "GICS_Sector": "278.62",
+            "t_value": 246.79,
+            "p_value": -11.4242
         },
         {
             "Stock_symbol": "GIS",
-            "start_price": 68.49,
-            "end_price": 85.92,
-            "pct_change": 25.449,
-            "sector_pct_change": 1.1894,
-            "stock_trade_volume": 3380399.0,
-            "trade_dollar_volume": 290443882.1,
-            "GICS_Sector": "Consumer_Staples"
+            "GICS_Sector": "68.49",
+            "t_value": 85.92,
+            "p_value": 25.449
         },
         {
             "Stock_symbol": "HSY",
-            "start_price": 216.52,
-            "end_price": 257.16,
-            "pct_change": 18.7696,
-            "sector_pct_change": 1.1894,
-            "stock_trade_volume": 817873.0,
-            "trade_dollar_volume": 210324220.7,
-            "GICS_Sector": "Consumer_Staples"
+            "GICS_Sector": "216.52",
+            "t_value": 257.16,
+            "p_value": 18.7696
         },
         {
             "Stock_symbol": "HRL",
-            "start_price": 51.7,
-            "end_price": 40.42,
-            "pct_change": -21.8182,
-            "sector_pct_change": 1.1894,
-            "stock_trade_volume": 4363242.0,
-            "trade_dollar_volume": 176362241.6,
-            "GICS_Sector": "Consumer_Staples"
+            "GICS_Sector": "51.7",
+            "t_value": 40.42,
+            "p_value": -21.8182
         },
         {
             "Stock_symbol": "K",
-            "start_price": 65.31,
-            "end_price": 67.11,
-            "pct_change": 2.7561,
-            "sector_pct_change": 1.1894,
-            "stock_trade_volume": 2465647.0,
-            "trade_dollar_volume": 165469570.2,
-            "GICS_Sector": "Consumer_Staples"
+            "GICS_Sector": "65.31",
+            "t_value": 67.11,
+            "p_value": 2.7561
         },
         {
             "Stock_symbol": "KDP",
-            "start_price": 38.36,
-            "end_price": 35.39,
-            "pct_change": -7.7424,
-            "sector_pct_change": 1.1894,
-            "stock_trade_volume": 8911627.0,
-            "trade_dollar_volume": 315382479.5,
-            "GICS_Sector": "Consumer_Staples"
+            "GICS_Sector": "38.36",
+            "t_value": 35.39,
+            "p_value": -7.7424
         },
         {
             "Stock_symbol": "KMB",
-            "start_price": 125.02,
-            "end_price": 135.01,
-            "pct_change": 7.9907,
-            "sector_pct_change": 1.1894,
-            "stock_trade_volume": 1905341.0,
-            "trade_dollar_volume": 257240088.4,
-            "GICS_Sector": "Consumer_Staples"
+            "GICS_Sector": "125.02",
+            "t_value": 135.01,
+            "p_value": 7.9907
         },
         {
             "Stock_symbol": "KHC",
-            "start_price": 39.89,
-            "end_price": 38.85,
-            "pct_change": -2.6072,
-            "sector_pct_change": 1.1894,
-            "stock_trade_volume": 5605280.0,
-            "trade_dollar_volume": 217765128.0,
-            "GICS_Sector": "Consumer_Staples"
+            "GICS_Sector": "39.89",
+            "t_value": 38.85,
+            "p_value": -2.6072
         },
         {
             "Stock_symbol": "KR",
-            "start_price": 57.44,
-            "end_price": 49.94,
-            "pct_change": -13.0571,
-            "sector_pct_change": 1.1894,
-            "stock_trade_volume": 6118221.0,
-            "trade_dollar_volume": 305543956.7,
-            "GICS_Sector": "Consumer_Staples"
+            "GICS_Sector": "57.44",
+            "t_value": 49.94,
+            "p_value": -13.0571
         },
         {
             "Stock_symbol": "LW",
-            "start_price": 60.69,
-            "end_price": 104.22,
-            "pct_change": 71.7252,
-            "sector_pct_change": 1.1894,
-            "stock_trade_volume": 1361130.0,
-            "trade_dollar_volume": 141856968.6,
-            "GICS_Sector": "Consumer_Staples"
+            "GICS_Sector": "60.69",
+            "t_value": 104.22,
+            "p_value": 71.7252
         },
         {
             "Stock_symbol": "MKC",
-            "start_price": 101.35,
-            "end_price": 84.32,
-            "pct_change": -16.8032,
-            "sector_pct_change": 1.1894,
-            "stock_trade_volume": 1870526.0,
-            "trade_dollar_volume": 157722752.3,
-            "GICS_Sector": "Consumer_Staples"
+            "GICS_Sector": "101.35",
+            "t_value": 84.32,
+            "p_value": -16.8032
         },
         {
             "Stock_symbol": "TAP",
-            "start_price": 52.07,
-            "end_price": 52.12,
-            "pct_change": 0.096,
-            "sector_pct_change": 1.1894,
-            "stock_trade_volume": 1263969.0,
-            "trade_dollar_volume": 65878064.28,
-            "GICS_Sector": "Consumer_Staples"
+            "GICS_Sector": "52.07",
+            "t_value": 52.12,
+            "p_value": 0.096
         },
         {
             "Stock_symbol": "MDLZ",
-            "start_price": 63.04,
-            "end_price": 70.22,
-            "pct_change": 11.3896,
-            "sector_pct_change": 1.1894,
-            "stock_trade_volume": 5755841.0,
-            "trade_dollar_volume": 404175155.0,
-            "GICS_Sector": "Consumer_Staples"
+            "GICS_Sector": "63.04",
+            "t_value": 70.22,
+            "p_value": 11.3896
         },
         {
             "Stock_symbol": "MNST",
-            "start_price": 41.3,
-            "end_price": 53.58,
-            "pct_change": 29.7337,
-            "sector_pct_change": 1.1894,
-            "stock_trade_volume": 4845520.0,
-            "trade_dollar_volume": 259622961.6,
-            "GICS_Sector": "Consumer_Staples"
+            "GICS_Sector": "41.3",
+            "t_value": 53.58,
+            "p_value": 29.7337
         },
         {
             "Stock_symbol": "PEP",
-            "start_price": 169.32,
-            "end_price": 182.5,
-            "pct_change": 7.7841,
-            "sector_pct_change": 1.1894,
-            "stock_trade_volume": 3902505.0,
-            "trade_dollar_volume": 712207162.5,
-            "GICS_Sector": "Consumer_Staples"
+            "GICS_Sector": "169.32",
+            "t_value": 182.5,
+            "p_value": 7.7841
         },
         {
             "Stock_symbol": "PM",
-            "start_price": 96.28,
-            "end_price": 97.9,
-            "pct_change": 1.6826,
-            "sector_pct_change": 1.1894,
-            "stock_trade_volume": 2962829.0,
-            "trade_dollar_volume": 290060959.1,
-            "GICS_Sector": "Consumer_Staples"
+            "GICS_Sector": "96.28",
+            "t_value": 97.9,
+            "p_value": 1.6826
         },
         {
             "Stock_symbol": "PG",
-            "start_price": 154.08,
-            "end_price": 149.51,
-            "pct_change": -2.966,
-            "sector_pct_change": 1.1894,
-            "stock_trade_volume": 5721680.0,
-            "trade_dollar_volume": 855448376.8,
-            "GICS_Sector": "Consumer_Staples"
+            "GICS_Sector": "154.08",
+            "t_value": 149.51,
+            "p_value": -2.966
         },
         {
             "Stock_symbol": "SJM",
-            "start_price": 134.64,
-            "end_price": 157.64,
-            "pct_change": 17.0826,
-            "sector_pct_change": 1.1894,
-            "stock_trade_volume": 692749.0,
-            "trade_dollar_volume": 109204952.4,
-            "GICS_Sector": "Consumer_Staples"
+            "GICS_Sector": "134.64",
+            "t_value": 157.64,
+            "p_value": 17.0826
         },
         {
             "Stock_symbol": "SYY",
-            "start_price": 82.88,
-            "end_price": 78.16,
-            "pct_change": -5.695,
-            "sector_pct_change": 1.1894,
-            "stock_trade_volume": 1504468.0,
-            "trade_dollar_volume": 117589218.9,
-            "GICS_Sector": "Consumer_Staples"
+            "GICS_Sector": "82.88",
+            "t_value": 78.16,
+            "p_value": -5.695
         },
         {
             "Stock_symbol": "TSN",
-            "start_price": 89.85,
-            "end_price": 59.41,
-            "pct_change": -33.8787,
-            "sector_pct_change": 1.1894,
-            "stock_trade_volume": 2778441.0,
-            "trade_dollar_volume": 165067179.8,
-            "GICS_Sector": "Consumer_Staples"
+            "GICS_Sector": "89.85",
+            "t_value": 59.41,
+            "p_value": -33.8787
         },
         {
             "Stock_symbol": "WBA",
-            "start_price": 43.4,
-            "end_price": 35.46,
-            "pct_change": -18.2949,
-            "sector_pct_change": 1.1894,
-            "stock_trade_volume": 9677966.0,
-            "trade_dollar_volume": 343180674.4,
-            "GICS_Sector": "Consumer_Staples"
+            "GICS_Sector": "43.4",
+            "t_value": 35.46,
+            "p_value": -18.2949
         },
         {
             "Stock_symbol": "WMT",
-            "start_price": 151.04,
-            "end_price": 148.69,
-            "pct_change": -1.5559,
-            "sector_pct_change": 1.1894,
-            "stock_trade_volume": 6588882.0,
-            "trade_dollar_volume": 979700864.6,
-            "GICS_Sector": "Consumer_Staples"
+            "GICS_Sector": "151.04",
+            "t_value": 148.69,
+            "p_value": -1.5559
         },
         {
             "Stock_symbol": "ATVI",
-            "start_price": 80.73,
-            "end_price": 85.33,
-            "pct_change": 5.698,
-            "sector_pct_change": -24.3968,
-            "stock_trade_volume": 6474703.0,
-            "trade_dollar_volume": 552486407.0,
-            "GICS_Sector": "Communication_Services"
+            "GICS_Sector": "80.73",
+            "t_value": 85.33,
+            "p_value": 5.698
         },
         {
             "Stock_symbol": "T",
-            "start_price": 24.18,
-            "end_price": 19.39,
-            "pct_change": -19.8098,
-            "sector_pct_change": -24.3968,
-            "stock_trade_volume": 31102535.0,
-            "trade_dollar_volume": 603078153.7,
-            "GICS_Sector": "Communication_Services"
+            "GICS_Sector": "24.18",
+            "t_value": 19.39,
+            "p_value": -19.8098
         },
         {
             "Stock_symbol": "CHTR",
-            "start_price": 562.0,
-            "end_price": 356.21,
-            "pct_change": -36.6174,
-            "sector_pct_change": -24.3968,
-            "stock_trade_volume": 923235.0,
-            "trade_dollar_volume": 328865539.3,
-            "GICS_Sector": "Communication_Services"
+            "GICS_Sector": "562",
+            "t_value": 356.21,
+            "p_value": -36.6174
         },
         {
             "Stock_symbol": "CMCSA",
-            "start_price": 48.11,
-            "end_price": 38.01,
-            "pct_change": -20.9936,
-            "sector_pct_change": -24.3968,
-            "stock_trade_volume": 19698330.0,
-            "trade_dollar_volume": 748733523.3,
-            "GICS_Sector": "Communication_Services"
+            "GICS_Sector": "48.11",
+            "t_value": 38.01,
+            "p_value": -20.9936
         },
         {
             "Stock_symbol": "DISH",
-            "start_price": 32.2,
-            "end_price": 9.05,
-            "pct_change": -71.8944,
-            "sector_pct_change": -24.3968,
-            "stock_trade_volume": 6775417.0,
-            "trade_dollar_volume": 61317523.85,
-            "GICS_Sector": "Communication_Services"
+            "GICS_Sector": "32.2",
+            "t_value": 9.05,
+            "p_value": -71.8944
         },
         {
             "Stock_symbol": "DIS",
-            "start_price": 138.58,
-            "end_price": 99.76,
-            "pct_change": -28.0127,
-            "sector_pct_change": -24.3968,
-            "stock_trade_volume": 7313201.0,
-            "trade_dollar_volume": 729564931.8,
-            "GICS_Sector": "Communication_Services"
+            "GICS_Sector": "138.58",
+            "t_value": 99.76,
+            "p_value": -28.0127
         },
         {
             "Stock_symbol": "EA",
-            "start_price": 128.02,
-            "end_price": 121.35,
-            "pct_change": -5.2101,
-            "sector_pct_change": -24.3968,
-            "stock_trade_volume": 1946432.0,
-            "trade_dollar_volume": 236199523.2,
-            "GICS_Sector": "Communication_Services"
+            "GICS_Sector": "128.02",
+            "t_value": 121.35,
+            "p_value": -5.2101
         },
         {
             "Stock_symbol": "FOXA",
-            "start_price": 39.55,
-            "end_price": 34.18,
-            "pct_change": -13.5777,
-            "sector_pct_change": -24.3968,
-            "stock_trade_volume": 2835502.0,
-            "trade_dollar_volume": 96917458.36,
-            "GICS_Sector": "Communication_Services"
+            "GICS_Sector": "39.55",
+            "t_value": 34.18,
+            "p_value": -13.5777
         },
         {
             "Stock_symbol": "FOX",
-            "start_price": 36.41,
-            "end_price": 31.37,
-            "pct_change": -13.8424,
-            "sector_pct_change": -24.3968,
-            "stock_trade_volume": 940815.0,
-            "trade_dollar_volume": 29513366.55,
-            "GICS_Sector": "Communication_Services"
+            "GICS_Sector": "36.41",
+            "t_value": 31.37,
+            "p_value": -13.8424
         },
         {
             "Stock_symbol": "IPG",
-            "start_price": 35.12,
-            "end_price": 37.57,
-            "pct_change": 6.9761,
-            "sector_pct_change": -24.3968,
-            "stock_trade_volume": 4547407.0,
-            "trade_dollar_volume": 170846081.0,
-            "GICS_Sector": "Communication_Services"
+            "GICS_Sector": "35.12",
+            "t_value": 37.57,
+            "p_value": 6.9761
         },
         {
             "Stock_symbol": "LYV",
-            "start_price": 116.17,
-            "end_price": 69.31,
-            "pct_change": -40.3374,
-            "sector_pct_change": -24.3968,
-            "stock_trade_volume": 1287160.0,
-            "trade_dollar_volume": 89213059.6,
-            "GICS_Sector": "Communication_Services"
+            "GICS_Sector": "116.17",
+            "t_value": 69.31,
+            "p_value": -40.3374
         },
         {
             "Stock_symbol": "LUMN",
-            "start_price": 11.53,
-            "end_price": 2.59,
-            "pct_change": -77.5369,
-            "sector_pct_change": -24.3968,
-            "stock_trade_volume": 26324389.0,
-            "trade_dollar_volume": 68180167.51,
-            "GICS_Sector": "Communication_Services"
+            "GICS_Sector": "11.53",
+            "t_value": 2.59,
+            "p_value": -77.5369
         },
         {
             "Stock_symbol": "MTCH",
-            "start_price": 113.34,
-            "end_price": 38.45,
-            "pct_change": -66.0755,
-            "sector_pct_change": -24.3968,
-            "stock_trade_volume": 3033198.0,
-            "trade_dollar_volume": 116626463.1,
-            "GICS_Sector": "Communication_Services"
+            "GICS_Sector": "113.34",
+            "t_value": 38.45,
+            "p_value": -66.0755
         },
         {
             "Stock_symbol": "NWSA",
-            "start_price": 22.11,
-            "end_price": 17.42,
-            "pct_change": -21.2121,
-            "sector_pct_change": -24.3968,
-            "stock_trade_volume": 2854215.0,
-            "trade_dollar_volume": 49720425.3,
-            "GICS_Sector": "Communication_Services"
+            "GICS_Sector": "22.11",
+            "t_value": 17.42,
+            "p_value": -21.2121
         },
         {
             "Stock_symbol": "NWS",
-            "start_price": 22.45,
-            "end_price": 17.6,
-            "pct_change": -21.6036,
-            "sector_pct_change": -24.3968,
-            "stock_trade_volume": 1379139.0,
-            "trade_dollar_volume": 24272846.4,
-            "GICS_Sector": "Communication_Services"
+            "GICS_Sector": "22.45",
+            "t_value": 17.6,
+            "p_value": -21.6036
         },
         {
             "Stock_symbol": "OMC",
-            "start_price": 82.04,
-            "end_price": 95.2,
-            "pct_change": 16.041,
-            "sector_pct_change": -24.3968,
-            "stock_trade_volume": 2341270.0,
-            "trade_dollar_volume": 222888904.0,
-            "GICS_Sector": "Communication_Services"
+            "GICS_Sector": "82.04",
+            "t_value": 95.2,
+            "p_value": 16.041
         },
         {
             "Stock_symbol": "PARA",
-            "start_price": 37.72,
-            "end_price": 21.79,
-            "pct_change": -42.2322,
-            "sector_pct_change": -24.3968,
-            "stock_trade_volume": 11501147.0,
-            "trade_dollar_volume": 250609993.1,
-            "GICS_Sector": "Communication_Services"
+            "GICS_Sector": "37.72",
+            "t_value": 21.79,
+            "p_value": -42.2322
         },
         {
             "Stock_symbol": "TMUS",
-            "start_price": 132.59,
-            "end_price": 146.76,
-            "pct_change": 10.6871,
-            "sector_pct_change": -24.3968,
-            "stock_trade_volume": 5674617.0,
-            "trade_dollar_volume": 832806790.9,
-            "GICS_Sector": "Communication_Services"
+            "GICS_Sector": "132.59",
+            "t_value": 146.76,
+            "p_value": 10.6871
         },
         {
             "Stock_symbol": "TTWO",
-            "start_price": 154.43,
-            "end_price": 118.69,
-            "pct_change": -23.1432,
-            "sector_pct_change": -24.3968,
-            "stock_trade_volume": 1350113.0,
-            "trade_dollar_volume": 160244912.0,
-            "GICS_Sector": "Communication_Services"
+            "GICS_Sector": "154.43",
+            "t_value": 118.69,
+            "p_value": -23.1432
         },
         {
             "Stock_symbol": "VZ",
-            "start_price": 52.46,
-            "end_price": 39.22,
-            "pct_change": -25.2383,
-            "sector_pct_change": -24.3968,
-            "stock_trade_volume": 19354856.0,
-            "trade_dollar_volume": 759097452.3,
-            "GICS_Sector": "Communication_Services"
+            "GICS_Sector": "52.46",
+            "t_value": 39.22,
+            "p_value": -25.2383
         },
         {
             "Stock_symbol": "ACN",
-            "start_price": 344.47,
-            "end_price": 285.84,
-            "pct_change": -17.0204,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 2417506.0,
-            "trade_dollar_volume": 691019915.0,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "344.47",
+            "t_value": 285.84,
+            "p_value": -17.0204
         },
         {
             "Stock_symbol": "ADBE",
-            "start_price": 468.81,
-            "end_price": 380.08,
-            "pct_change": -18.9266,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 2712644.0,
-            "trade_dollar_volume": 1031021732.0,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "468.81",
+            "t_value": 380.08,
+            "p_value": -18.9266
         },
         {
             "Stock_symbol": "ADP",
-            "start_price": 235.18,
-            "end_price": 216.81,
-            "pct_change": -7.811,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 2592146.0,
-            "trade_dollar_volume": 562003174.3,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "235.18",
+            "t_value": 216.81,
+            "p_value": -7.811
         },
         {
             "Stock_symbol": "AKAM",
-            "start_price": 120.46,
-            "end_price": 77.88,
-            "pct_change": -35.3478,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 1255871.0,
-            "trade_dollar_volume": 97807233.48,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "120.46",
+            "t_value": 77.88,
+            "p_value": -35.3478
         },
         {
             "Stock_symbol": "AMD",
-            "start_price": 110.53,
-            "end_price": 96.56,
-            "pct_change": -12.6391,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 50655332.0,
-            "trade_dollar_volume": 4891278858.0,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "110.53",
+            "t_value": 96.56,
+            "p_value": -12.6391
         },
         {
             "Stock_symbol": "APH",
-            "start_price": 75.99,
-            "end_price": 81.22,
-            "pct_change": 6.8825,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 2680179.0,
-            "trade_dollar_volume": 217684138.4,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "75.99",
+            "t_value": 81.22,
+            "p_value": 6.8825
         },
         {
             "Stock_symbol": "ADI",
-            "start_price": 164.5,
-            "end_price": 196.28,
-            "pct_change": 19.3191,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 3120753.0,
-            "trade_dollar_volume": 612541398.8,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "164.5",
+            "t_value": 196.28,
+            "p_value": 19.3191
         },
         {
             "Stock_symbol": "ANSS",
-            "start_price": 323.21,
-            "end_price": 329.4,
-            "pct_change": 1.9152,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 456294.0,
-            "trade_dollar_volume": 150303243.6,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "323.21",
+            "t_value": 329.4,
+            "p_value": 1.9152
         },
         {
             "Stock_symbol": "AMAT",
-            "start_price": 129.44,
-            "end_price": 122.32,
-            "pct_change": -5.5006,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 5117768.0,
-            "trade_dollar_volume": 626005381.8,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "129.44",
+            "t_value": 122.32,
+            "p_value": -5.5006
         },
         {
             "Stock_symbol": "ANET",
-            "start_price": 142.75,
-            "end_price": 167.74,
-            "pct_change": 17.5061,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 3217799.0,
-            "trade_dollar_volume": 539753604.3,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "142.75",
+            "t_value": 167.74,
+            "p_value": 17.5061
         },
         {
             "Stock_symbol": "ADSK",
-            "start_price": 218.77,
-            "end_price": 207.58,
-            "pct_change": -5.115,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 1472599.0,
-            "trade_dollar_volume": 305682100.4,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "218.77",
+            "t_value": 207.58,
+            "p_value": -5.115
         },
         {
             "Stock_symbol": "AVGO",
-            "start_price": 634.85,
-            "end_price": 642.47,
-            "pct_change": 1.2003,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 1568246.0,
-            "trade_dollar_volume": 1007551008.0,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "634.85",
+            "t_value": 642.47,
+            "p_value": 1.2003
         },
         {
             "Stock_symbol": "BR",
-            "start_price": 156.61,
-            "end_price": 145.2,
-            "pct_change": -7.2856,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 472246.0,
-            "trade_dollar_volume": 68570119.2,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "156.61",
+            "t_value": 145.2,
+            "p_value": -7.2856
         },
         {
             "Stock_symbol": "CDNS",
-            "start_price": 167.11,
-            "end_price": 211.39,
-            "pct_change": 26.4975,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 1603573.0,
-            "trade_dollar_volume": 338979296.5,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "167.11",
+            "t_value": 211.39,
+            "p_value": 26.4975
         },
         {
             "Stock_symbol": "CDW",
-            "start_price": 178.83,
-            "end_price": 193.69,
-            "pct_change": 8.3096,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 738339.0,
-            "trade_dollar_volume": 143008880.9,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "178.83",
+            "t_value": 193.69,
+            "p_value": 8.3096
         },
         {
             "Stock_symbol": "CDAY",
-            "start_price": 70.13,
-            "end_price": 73.22,
-            "pct_change": 4.4061,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 1627399.0,
-            "trade_dollar_volume": 119158154.8,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "70.13",
+            "t_value": 73.22,
+            "p_value": 4.4061
         },
         {
             "Stock_symbol": "CSCO",
-            "start_price": 55.87,
-            "end_price": 52.31,
-            "pct_change": -6.3719,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 16884635.0,
-            "trade_dollar_volume": 883235256.9,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "55.87",
+            "t_value": 52.31,
+            "p_value": -6.3719
         },
         {
             "Stock_symbol": "CTSH",
-            "start_price": 90.02,
-            "end_price": 61.37,
-            "pct_change": -31.8263,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 3573973.0,
-            "trade_dollar_volume": 219334723.0,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "90.02",
+            "t_value": 61.37,
+            "p_value": -31.8263
         },
         {
             "Stock_symbol": "GLW",
-            "start_price": 36.59,
-            "end_price": 34.95,
-            "pct_change": -4.4821,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 4885049.0,
-            "trade_dollar_volume": 170732462.6,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "36.59",
+            "t_value": 34.95,
+            "p_value": -4.4821
         },
         {
             "Stock_symbol": "DXC",
-            "start_price": 31.86,
-            "end_price": 25.33,
-            "pct_change": -20.4959,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 1602076.0,
-            "trade_dollar_volume": 40580585.08,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "31.86",
+            "t_value": 25.33,
+            "p_value": -20.4959
         },
         {
             "Stock_symbol": "ENPH",
-            "start_price": 216.38,
-            "end_price": 202.6,
-            "pct_change": -6.3684,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 3609614.0,
-            "trade_dollar_volume": 731307796.4,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "216.38",
+            "t_value": 202.6,
+            "p_value": -6.3684
         },
         {
             "Stock_symbol": "EPAM",
-            "start_price": 297.94,
-            "end_price": 297.22,
-            "pct_change": -0.2417,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 386482.0,
-            "trade_dollar_volume": 114870180.0,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "297.94",
+            "t_value": 297.22,
+            "p_value": -0.2417
         },
         {
             "Stock_symbol": "FFIV",
-            "start_price": 212.0,
-            "end_price": 144.67,
-            "pct_change": -31.7594,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 295416.0,
-            "trade_dollar_volume": 42737832.72,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "212",
+            "t_value": 144.67,
+            "p_value": -31.7594
         },
         {
             "Stock_symbol": "FIS",
-            "start_price": 103.26,
-            "end_price": 54.09,
-            "pct_change": -47.6177,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 5743711.0,
-            "trade_dollar_volume": 310677328.0,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "103.26",
+            "t_value": 54.09,
+            "p_value": -47.6177
         },
         {
             "Stock_symbol": "FISV",
-            "start_price": 103.18,
-            "end_price": 112.83,
-            "pct_change": 9.3526,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 3303334.0,
-            "trade_dollar_volume": 372715175.2,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "103.18",
+            "t_value": 112.83,
+            "p_value": 9.3526
         },
         {
             "Stock_symbol": "FLT",
-            "start_price": 253.84,
-            "end_price": 211.57,
-            "pct_change": -16.6522,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 451310.0,
-            "trade_dollar_volume": 95483656.7,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "253.84",
+            "t_value": 211.57,
+            "p_value": -16.6522
         },
         {
             "Stock_symbol": "FTNT",
-            "start_price": 69.338,
-            "end_price": 66.31,
-            "pct_change": -4.367,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 3343034.0,
-            "trade_dollar_volume": 221676584.5,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "69.338",
+            "t_value": 66.31,
+            "p_value": -4.367
         },
         {
             "Stock_symbol": "IT",
-            "start_price": 300.29,
-            "end_price": 324.71,
-            "pct_change": 8.1321,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 519706.0,
-            "trade_dollar_volume": 168753735.3,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "300.29",
+            "t_value": 324.71,
+            "p_value": 8.1321
         },
         {
             "Stock_symbol": "GPN",
-            "start_price": 140.5,
-            "end_price": 105.25,
-            "pct_change": -25.089,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 1454677.0,
-            "trade_dollar_volume": 153104754.3,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "140.5",
+            "t_value": 105.25,
+            "p_value": -25.089
         },
         {
             "Stock_symbol": "HPE",
-            "start_price": 16.32,
-            "end_price": 16.33,
-            "pct_change": 0.0613,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 15773325.0,
-            "trade_dollar_volume": 257578397.2,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "16.32",
+            "t_value": 16.33,
+            "p_value": 0.0613
         },
         {
             "Stock_symbol": "HPQ",
-            "start_price": 36.64,
-            "end_price": 29.89,
-            "pct_change": -18.4225,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 6518949.0,
-            "trade_dollar_volume": 194851385.6,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "36.64",
+            "t_value": 29.89,
+            "p_value": -18.4225
         },
         {
             "Stock_symbol": "IBM",
-            "start_price": 130.27,
-            "end_price": 132.06,
-            "pct_change": 1.3741,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 3840139.0,
-            "trade_dollar_volume": 507128756.3,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "130.27",
+            "t_value": 132.06,
+            "p_value": 1.3741
         },
         {
             "Stock_symbol": "INTC",
-            "start_price": 49.2,
-            "end_price": 32.89,
-            "pct_change": -33.1504,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 57038344.0,
-            "trade_dollar_volume": 1875991134.0,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "49.2",
+            "t_value": 32.89,
+            "p_value": -33.1504
         },
         {
             "Stock_symbol": "INTU",
-            "start_price": 505.65,
-            "end_price": 440.67,
-            "pct_change": -12.8508,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 1234130.0,
-            "trade_dollar_volume": 543844067.1,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "505.65",
+            "t_value": 440.67,
+            "p_value": -12.8508
         },
         {
             "Stock_symbol": "JKHY",
-            "start_price": 200.64,
-            "end_price": 150.59,
-            "pct_change": -24.9452,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 588306.0,
-            "trade_dollar_volume": 88593000.54,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "200.64",
+            "t_value": 150.59,
+            "p_value": -24.9452
         },
         {
             "Stock_symbol": "JNPR",
-            "start_price": 36.79,
-            "end_price": 34.43,
-            "pct_change": -6.4148,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 3050150.0,
-            "trade_dollar_volume": 105016664.5,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "36.79",
+            "t_value": 34.43,
+            "p_value": -6.4148
         },
         {
             "Stock_symbol": "KEYS",
-            "start_price": 159.59,
-            "end_price": 161.07,
-            "pct_change": 0.9274,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 683003.0,
-            "trade_dollar_volume": 110011293.2,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "159.59",
+            "t_value": 161.07,
+            "p_value": 0.9274
         },
         {
             "Stock_symbol": "KLAC",
-            "start_price": 367.05,
-            "end_price": 398.99,
-            "pct_change": 8.7018,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 787868.0,
-            "trade_dollar_volume": 314351453.3,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "367.05",
+            "t_value": 398.99,
+            "p_value": 8.7018
         },
         {
             "Stock_symbol": "LRCX",
-            "start_price": 535.55,
-            "end_price": 521.51,
-            "pct_change": -2.6216,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 1110179.0,
-            "trade_dollar_volume": 578969450.3,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "535.55",
+            "t_value": 521.51,
+            "p_value": -2.6216
         },
         {
             "Stock_symbol": "MA",
-            "start_price": 366.91,
-            "end_price": 366.47,
-            "pct_change": -0.1199,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 2978067.0,
-            "trade_dollar_volume": 1091372213.0,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "366.91",
+            "t_value": 366.47,
+            "p_value": -0.1199
         },
         {
             "Stock_symbol": "MCHP",
-            "start_price": 74.38,
-            "end_price": 82.71,
-            "pct_change": 11.1992,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 3434886.0,
-            "trade_dollar_volume": 284099421.1,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "74.38",
+            "t_value": 82.71,
+            "p_value": 11.1992
         },
         {
             "Stock_symbol": "MU",
-            "start_price": 77.67,
-            "end_price": 59.61,
-            "pct_change": -23.2522,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 23610823.0,
-            "trade_dollar_volume": 1407441159.0,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "77.67",
+            "t_value": 59.61,
+            "p_value": -23.2522
         },
         {
             "Stock_symbol": "MSFT",
-            "start_price": 314.97,
-            "end_price": 287.23,
-            "pct_change": -8.8072,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 24743342.0,
-            "trade_dollar_volume": 7107030123.0,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "314.97",
+            "t_value": 287.23,
+            "p_value": -8.8072
         },
         {
             "Stock_symbol": "MPWR",
-            "start_price": 474.53,
-            "end_price": 492.97,
-            "pct_change": 3.886,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 342838.0,
-            "trade_dollar_volume": 169008848.9,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "474.53",
+            "t_value": 492.97,
+            "p_value": 3.886
         },
         {
             "Stock_symbol": "MSI",
-            "start_price": 239.89,
-            "end_price": 285.43,
-            "pct_change": 18.9837,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 672558.0,
-            "trade_dollar_volume": 191968229.9,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "239.89",
+            "t_value": 285.43,
+            "p_value": 18.9837
         },
         {
             "Stock_symbol": "NTAP",
-            "start_price": 83.65,
-            "end_price": 64.19,
-            "pct_change": -23.2636,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 1959252.0,
-            "trade_dollar_volume": 125764385.9,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "83.65",
+            "t_value": 64.19,
+            "p_value": -23.2636
         },
         {
             "Stock_symbol": "NVDA",
-            "start_price": 273.6,
-            "end_price": 279.65,
-            "pct_change": 2.2113,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 39868260.0,
-            "trade_dollar_volume": 11149158909.0,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "273.6",
+            "t_value": 279.65,
+            "p_value": 2.2113
         },
         {
             "Stock_symbol": "NXPI",
-            "start_price": 182.61,
-            "end_price": 181.98,
-            "pct_change": -0.345,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 1623854.0,
-            "trade_dollar_volume": 295508950.9,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "182.61",
+            "t_value": 181.98,
+            "p_value": -0.345
         },
         {
             "Stock_symbol": "ON",
-            "start_price": 59.59,
-            "end_price": 81.14,
-            "pct_change": 36.1638,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 4431067.0,
-            "trade_dollar_volume": 359536776.4,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "59.59",
+            "t_value": 81.14,
+            "p_value": 36.1638
         },
         {
             "Stock_symbol": "ORCL",
-            "start_price": 84.07,
-            "end_price": 93.92,
-            "pct_change": 11.7164,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 8410872.0,
-            "trade_dollar_volume": 789949098.2,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "84.07",
+            "t_value": 93.92,
+            "p_value": 11.7164
         },
         {
             "Stock_symbol": "PAYX",
-            "start_price": 139.31,
-            "end_price": 111.33,
-            "pct_change": -20.0847,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 3514581.0,
-            "trade_dollar_volume": 391278302.7,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "139.31",
+            "t_value": 111.33,
+            "p_value": -20.0847
         },
         {
             "Stock_symbol": "PAYC",
-            "start_price": 358.64,
-            "end_price": 298.62,
-            "pct_change": -16.7354,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 393365.0,
-            "trade_dollar_volume": 117466656.3,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "358.64",
+            "t_value": 298.62,
+            "p_value": -16.7354
         },
         {
             "Stock_symbol": "PYPL",
-            "start_price": 121.86,
-            "end_price": 75.29,
-            "pct_change": -38.216,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 8911724.0,
-            "trade_dollar_volume": 670963700.0,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "121.86",
+            "t_value": 75.29,
+            "p_value": -38.216
         },
         {
             "Stock_symbol": "PTC",
-            "start_price": 108.75,
-            "end_price": 128.07,
-            "pct_change": 17.7655,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 579901.0,
-            "trade_dollar_volume": 74267921.07,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "108.75",
+            "t_value": 128.07,
+            "p_value": 17.7655
         },
         {
             "Stock_symbol": "QRVO",
-            "start_price": 123.49,
-            "end_price": 100.87,
-            "pct_change": -18.3173,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 980405.0,
-            "trade_dollar_volume": 98893452.35,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "123.49",
+            "t_value": 100.87,
+            "p_value": -18.3173
         },
         {
             "Stock_symbol": "QCOM",
-            "start_price": 153.81,
-            "end_price": 124.74,
-            "pct_change": -18.8999,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 6359202.0,
-            "trade_dollar_volume": 793246857.5,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "153.81",
+            "t_value": 124.74,
+            "p_value": -18.8999
         },
         {
             "Stock_symbol": "ROP",
-            "start_price": 481.26,
-            "end_price": 440.79,
-            "pct_change": -8.4092,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 609685.0,
-            "trade_dollar_volume": 268743051.2,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "481.26",
+            "t_value": 440.79,
+            "p_value": -8.4092
         },
         {
             "Stock_symbol": "CRM",
-            "start_price": 218.85,
-            "end_price": 196.49,
-            "pct_change": -10.217,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 5340770.0,
-            "trade_dollar_volume": 1049407897.0,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "218.85",
+            "t_value": 196.49,
+            "p_value": -10.217
         },
         {
             "Stock_symbol": "STX",
-            "start_price": 90.97,
-            "end_price": 65.75,
-            "pct_change": -27.7234,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 2112548.0,
-            "trade_dollar_volume": 138900031.0,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "90.97",
+            "t_value": 65.75,
+            "p_value": -27.7234
         },
         {
             "Stock_symbol": "NOW",
-            "start_price": 574.82,
-            "end_price": 464.49,
-            "pct_change": -19.1938,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 1358561.0,
-            "trade_dollar_volume": 631037998.9,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "574.82",
+            "t_value": 464.49,
+            "p_value": -19.1938
         },
         {
             "Stock_symbol": "SWKS",
-            "start_price": 134.28,
-            "end_price": 117.39,
-            "pct_change": -12.5782,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 1068029.0,
-            "trade_dollar_volume": 125375924.3,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "134.28",
+            "t_value": 117.39,
+            "p_value": -12.5782
         },
         {
             "Stock_symbol": "SEDG",
-            "start_price": 335.31,
-            "end_price": 298.31,
-            "pct_change": -11.0346,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 950923.0,
-            "trade_dollar_volume": 283669840.1,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "335.31",
+            "t_value": 298.31,
+            "p_value": -11.0346
         },
         {
             "Stock_symbol": "SNPS",
-            "start_price": 340.15,
-            "end_price": 388.94,
-            "pct_change": 14.3437,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 843274.0,
-            "trade_dollar_volume": 327982989.6,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "340.15",
+            "t_value": 388.94,
+            "p_value": 14.3437
         },
         {
             "Stock_symbol": "TEL",
-            "start_price": 132.15,
-            "end_price": 130.89,
-            "pct_change": -0.9535,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 1345833.0,
-            "trade_dollar_volume": 176156081.4,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "132.15",
+            "t_value": 130.89,
+            "p_value": -0.9535
         },
         {
             "Stock_symbol": "TDY",
-            "start_price": 484.7,
-            "end_price": 445.59,
-            "pct_change": -8.0689,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 169692.0,
-            "trade_dollar_volume": 75613058.28,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "484.7",
+            "t_value": 445.59,
+            "p_value": -8.0689
         },
         {
             "Stock_symbol": "TER",
-            "start_price": 118.94,
-            "end_price": 106.8,
-            "pct_change": -10.2068,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 1236650.0,
-            "trade_dollar_volume": 132074220.0,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "118.94",
+            "t_value": 106.8,
+            "p_value": -10.2068
         },
         {
             "Stock_symbol": "TXN",
-            "start_price": 182.71,
-            "end_price": 184.16,
-            "pct_change": 0.7936,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 4143112.0,
-            "trade_dollar_volume": 762995505.9,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "182.71",
+            "t_value": 184.16,
+            "p_value": 0.7936
         },
         {
             "Stock_symbol": "TRMB",
-            "start_price": 74.61,
-            "end_price": 51.75,
-            "pct_change": -30.6393,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 1027446.0,
-            "trade_dollar_volume": 53170330.5,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "74.61",
+            "t_value": 51.75,
+            "p_value": -30.6393
         },
         {
             "Stock_symbol": "TYL",
-            "start_price": 444.26,
-            "end_price": 354.01,
-            "pct_change": -20.3147,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 289937.0,
-            "trade_dollar_volume": 102640597.4,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "444.26",
+            "t_value": 354.01,
+            "p_value": -20.3147
         },
         {
             "Stock_symbol": "VRSN",
-            "start_price": 226.55,
-            "end_price": 213.34,
-            "pct_change": -5.8309,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 533910.0,
-            "trade_dollar_volume": 113904359.4,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "226.55",
+            "t_value": 213.34,
+            "p_value": -5.8309
         },
         {
             "Stock_symbol": "V",
-            "start_price": 227.74,
-            "end_price": 229.0,
-            "pct_change": 0.5533,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 6421512.0,
-            "trade_dollar_volume": 1470526248.0,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "227.74",
+            "t_value": 229.0,
+            "p_value": 0.5533
         },
         {
             "Stock_symbol": "WDC",
-            "start_price": 49.34,
-            "end_price": 37.2,
-            "pct_change": -24.6048,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 2452025.0,
-            "trade_dollar_volume": 91215330.0,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "49.34",
+            "t_value": 37.2,
+            "p_value": -24.6048
         },
         {
             "Stock_symbol": "ZBRA",
-            "start_price": 431.24,
-            "end_price": 311.65,
-            "pct_change": -27.7317,
-            "sector_pct_change": -7.6256,
-            "stock_trade_volume": 199872.0,
-            "trade_dollar_volume": 62290108.8,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "431.24",
+            "t_value": 311.65,
+            "p_value": -27.7317
         },
         {
             "Stock_symbol": "AAP",
-            "start_price": 211.92,
-            "end_price": 122.69,
-            "pct_change": -42.1055,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 1476318.0,
-            "trade_dollar_volume": 181129455.4,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "211.92",
+            "t_value": 122.69,
+            "p_value": -42.1055
         },
         {
             "Stock_symbol": "APTV",
-            "start_price": 118.73,
-            "end_price": 110.49,
-            "pct_change": -6.9401,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 1927033.0,
-            "trade_dollar_volume": 212917876.2,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "118.73",
+            "t_value": 110.49,
+            "p_value": -6.9401
         },
         {
             "Stock_symbol": "AZO",
-            "start_price": 2016.38,
-            "end_price": 2511.54,
-            "pct_change": 24.5569,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 207137.0,
-            "trade_dollar_volume": 520232861.0,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "2016.38",
+            "t_value": 2511.54,
+            "p_value": 24.5569
         },
         {
             "Stock_symbol": "BBWI",
-            "start_price": 47.82,
-            "end_price": 36.5,
-            "pct_change": -23.6721,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 3429617.0,
-            "trade_dollar_volume": 125181020.5,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "47.82",
+            "t_value": 36.5,
+            "p_value": -23.6721
         },
         {
             "Stock_symbol": "BBY",
-            "start_price": 94.34,
-            "end_price": 78.51,
-            "pct_change": -16.7797,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 2220825.0,
-            "trade_dollar_volume": 174356970.8,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "94.34",
+            "t_value": 78.51,
+            "p_value": -16.7797
         },
         {
             "Stock_symbol": "BKNG",
-            "start_price": 2374.97,
-            "end_price": 2665.19,
-            "pct_change": 12.2199,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 223115.0,
-            "trade_dollar_volume": 594643866.9,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "2374.97",
+            "t_value": 2665.19,
+            "p_value": 12.2199
         },
         {
             "Stock_symbol": "BWA",
-            "start_price": 38.79,
-            "end_price": 48.7,
-            "pct_change": 25.5478,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 1733155.0,
-            "trade_dollar_volume": 84404648.5,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "38.79",
+            "t_value": 48.7,
+            "p_value": 25.5478
         },
         {
             "Stock_symbol": "CZR",
-            "start_price": 80.69,
-            "end_price": 49.28,
-            "pct_change": -38.9268,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 2550488.0,
-            "trade_dollar_volume": 125688048.6,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "80.69",
+            "t_value": 49.28,
+            "p_value": -38.9268
         },
         {
             "Stock_symbol": "KMX",
-            "start_price": 101.37,
-            "end_price": 64.58,
-            "pct_change": -36.2928,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 1797666.0,
-            "trade_dollar_volume": 116093270.3,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "101.37",
+            "t_value": 64.58,
+            "p_value": -36.2928
         },
         {
             "Stock_symbol": "CCL",
-            "start_price": 19.74,
-            "end_price": 9.97,
-            "pct_change": -49.4934,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 39031873.0,
-            "trade_dollar_volume": 389147773.8,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "19.74",
+            "t_value": 9.97,
+            "p_value": -49.4934
         },
         {
             "Stock_symbol": "CMG",
-            "start_price": 1610.75,
-            "end_price": 1717.73,
-            "pct_change": 6.6416,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 245880.0,
-            "trade_dollar_volume": 422355452.4,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "1610.75",
+            "t_value": 1717.73,
+            "p_value": 6.6416
         },
         {
             "Stock_symbol": "DHI",
-            "start_price": 76.66,
-            "end_price": 98.12,
-            "pct_change": 27.9937,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 3955888.0,
-            "trade_dollar_volume": 388151730.6,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "76.66",
+            "t_value": 98.12,
+            "p_value": 27.9937
         },
         {
             "Stock_symbol": "DRI",
-            "start_price": 131.29,
-            "end_price": 153.89,
-            "pct_change": 17.2138,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 1767459.0,
-            "trade_dollar_volume": 271994265.5,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "131.29",
+            "t_value": 153.89,
+            "p_value": 17.2138
         },
         {
             "Stock_symbol": "DG",
-            "start_price": 226.27,
-            "end_price": 211.87,
-            "pct_change": -6.3641,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 2235083.0,
-            "trade_dollar_volume": 473547035.2,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "226.27",
+            "t_value": 211.87,
+            "p_value": -6.3641
         },
         {
             "Stock_symbol": "DLTR",
-            "start_price": 156.77,
-            "end_price": 148.01,
-            "pct_change": -5.5878,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 3394101.0,
-            "trade_dollar_volume": 502360889.0,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "156.77",
+            "t_value": 148.01,
+            "p_value": -5.5878
         },
         {
             "Stock_symbol": "DPZ",
-            "start_price": 403.79,
-            "end_price": 332.52,
-            "pct_change": -17.6503,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 799271.0,
-            "trade_dollar_volume": 265773592.9,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "403.79",
+            "t_value": 332.52,
+            "p_value": -17.6503
         },
         {
             "Stock_symbol": "EBAY",
-            "start_price": 56.73,
-            "end_price": 44.28,
-            "pct_change": -21.9461,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 3539729.0,
-            "trade_dollar_volume": 156739200.1,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "56.73",
+            "t_value": 44.28,
+            "p_value": -21.9461
         },
         {
             "Stock_symbol": "ETSY",
-            "start_price": 136.17,
-            "end_price": 108.25,
-            "pct_change": -20.5038,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 2409968.0,
-            "trade_dollar_volume": 260879036.0,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "136.17",
+            "t_value": 108.25,
+            "p_value": -20.5038
         },
         {
             "Stock_symbol": "EXPE",
-            "start_price": 197.29,
-            "end_price": 95.07,
-            "pct_change": -51.8121,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 1768992.0,
-            "trade_dollar_volume": 168178069.4,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "197.29",
+            "t_value": 95.07,
+            "p_value": -51.8121
         },
         {
             "Stock_symbol": "F",
-            "start_price": 16.66,
-            "end_price": 12.68,
-            "pct_change": -23.8896,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 55956287.0,
-            "trade_dollar_volume": 709525719.2,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "16.66",
+            "t_value": 12.68,
+            "p_value": -23.8896
         },
         {
             "Stock_symbol": "GRMN",
-            "start_price": 118.75,
-            "end_price": 100.72,
-            "pct_change": -15.1832,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 992423.0,
-            "trade_dollar_volume": 99956844.56,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "118.75",
+            "t_value": 100.72,
+            "p_value": -15.1832
         },
         {
             "Stock_symbol": "GM",
-            "start_price": 43.18,
-            "end_price": 36.27,
-            "pct_change": -16.0028,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 10887916.0,
-            "trade_dollar_volume": 394904713.3,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "43.18",
+            "t_value": 36.27,
+            "p_value": -16.0028
         },
         {
             "Stock_symbol": "GPC",
-            "start_price": 129.28,
-            "end_price": 168.28,
-            "pct_change": 30.1671,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 837248.0,
-            "trade_dollar_volume": 140892093.4,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "129.28",
+            "t_value": 168.28,
+            "p_value": 30.1671
         },
         {
             "Stock_symbol": "HAS",
-            "start_price": 85.12,
-            "end_price": 52.89,
-            "pct_change": -37.8642,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 1500830.0,
-            "trade_dollar_volume": 79378898.7,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "85.12",
+            "t_value": 52.89,
+            "p_value": -37.8642
         },
         {
             "Stock_symbol": "HLT",
-            "start_price": 152.34,
-            "end_price": 139.57,
-            "pct_change": -8.3826,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 1283666.0,
-            "trade_dollar_volume": 179161263.6,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "152.34",
+            "t_value": 139.57,
+            "p_value": -8.3826
         },
         {
             "Stock_symbol": "HD",
-            "start_price": 305.58,
-            "end_price": 297.73,
-            "pct_change": -2.5689,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 4007558.0,
-            "trade_dollar_volume": 1193170243.0,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "305.58",
+            "t_value": 297.73,
+            "p_value": -2.5689
         },
         {
             "Stock_symbol": "LVS",
-            "start_price": 39.93,
-            "end_price": 58.72,
-            "pct_change": 47.0574,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 5731331.0,
-            "trade_dollar_volume": 336543756.3,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "39.93",
+            "t_value": 58.72,
+            "p_value": 47.0574
         },
         {
             "Stock_symbol": "LEN",
-            "start_price": 82.31,
-            "end_price": 105.25,
-            "pct_change": 27.8702,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 1385301.0,
-            "trade_dollar_volume": 145802930.3,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "82.31",
+            "t_value": 105.25,
+            "p_value": 27.8702
         },
         {
             "Stock_symbol": "LKQ",
-            "start_price": 45.38,
-            "end_price": 56.7,
-            "pct_change": 24.9449,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 725945.0,
-            "trade_dollar_volume": 41161081.5,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "45.38",
+            "t_value": 56.7,
+            "p_value": 24.9449
         },
         {
             "Stock_symbol": "LOW",
-            "start_price": 204.12,
-            "end_price": 203.99,
-            "pct_change": -0.0637,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 3471080.0,
-            "trade_dollar_volume": 708065609.2,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "204.12",
+            "t_value": 203.99,
+            "p_value": -0.0637
         },
         {
             "Stock_symbol": "MAR",
-            "start_price": 174.65,
-            "end_price": 164.46,
-            "pct_change": -5.8345,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 1533033.0,
-            "trade_dollar_volume": 252122607.2,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "174.65",
+            "t_value": 164.46,
+            "p_value": -5.8345
         },
         {
             "Stock_symbol": "MCD",
-            "start_price": 246.83,
-            "end_price": 282.14,
-            "pct_change": 14.3054,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 2352716.0,
-            "trade_dollar_volume": 663795292.2,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "246.83",
+            "t_value": 282.14,
+            "p_value": 14.3054
         },
         {
             "Stock_symbol": "MGM",
-            "start_price": 42.5,
-            "end_price": 44.25,
-            "pct_change": 4.1176,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 3754488.0,
-            "trade_dollar_volume": 166136094.0,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "42.5",
+            "t_value": 44.25,
+            "p_value": 4.1176
         },
         {
             "Stock_symbol": "MHK",
-            "start_price": 126.3,
-            "end_price": 99.19,
-            "pct_change": -21.4648,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 475198.0,
-            "trade_dollar_volume": 47134889.62,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "126.3",
+            "t_value": 99.19,
+            "p_value": -21.4648
         },
         {
             "Stock_symbol": "NWL",
-            "start_price": 21.75,
-            "end_price": 12.45,
-            "pct_change": -42.7586,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 4398495.0,
-            "trade_dollar_volume": 54761262.75,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "21.75",
+            "t_value": 12.45,
+            "p_value": -42.7586
         },
         {
             "Stock_symbol": "NKE",
-            "start_price": 134.34,
-            "end_price": 121.67,
-            "pct_change": -9.4313,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 4838399.0,
-            "trade_dollar_volume": 588688006.3,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "134.34",
+            "t_value": 121.67,
+            "p_value": -9.4313
         },
         {
             "Stock_symbol": "NCLH",
-            "start_price": 21.97,
-            "end_price": 13.35,
-            "pct_change": -39.2353,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 9476272.0,
-            "trade_dollar_volume": 126508231.2,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "21.97",
+            "t_value": 13.35,
+            "p_value": -39.2353
         },
         {
             "Stock_symbol": "NVR",
-            "start_price": 4548.42,
-            "end_price": 5576.7,
-            "pct_change": 22.6074,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 20079.0,
-            "trade_dollar_volume": 111974559.3,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "4548.42",
+            "t_value": 5576.7,
+            "p_value": 22.6074
         },
         {
             "Stock_symbol": "ORLY",
-            "start_price": 686.85,
-            "end_price": 867.95,
-            "pct_change": 26.3667,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 352521.0,
-            "trade_dollar_volume": 305970602.0,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "686.85",
+            "t_value": 867.95,
+            "p_value": 26.3667
         },
         {
             "Stock_symbol": "POOL",
-            "start_price": 430.74,
-            "end_price": 339.25,
-            "pct_change": -21.2402,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 400706.0,
-            "trade_dollar_volume": 135939510.5,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "430.74",
+            "t_value": 339.25,
+            "p_value": -21.2402
         },
         {
             "Stock_symbol": "PHM",
-            "start_price": 43.17,
-            "end_price": 59.0,
-            "pct_change": 36.669,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 1893931.0,
-            "trade_dollar_volume": 111741929.0,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "43.17",
+            "t_value": 59.0,
+            "p_value": 36.669
         },
         {
             "Stock_symbol": "RL",
-            "start_price": 115.07,
-            "end_price": 117.52,
-            "pct_change": 2.1291,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 688798.0,
-            "trade_dollar_volume": 80947540.96,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "115.07",
+            "t_value": 117.52,
+            "p_value": 2.1291
         },
         {
             "Stock_symbol": "ROST",
-            "start_price": 93.17,
-            "end_price": 108.63,
-            "pct_change": 16.5933,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 3637370.0,
-            "trade_dollar_volume": 395127503.1,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "93.17",
+            "t_value": 108.63,
+            "p_value": 16.5933
         },
         {
             "Stock_symbol": "RCL",
-            "start_price": 83.42,
-            "end_price": 64.25,
-            "pct_change": -22.9801,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 2444651.0,
-            "trade_dollar_volume": 157068826.8,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "83.42",
+            "t_value": 64.25,
+            "p_value": -22.9801
         },
         {
             "Stock_symbol": "SBUX",
-            "start_price": 88.09,
-            "end_price": 104.85,
-            "pct_change": 19.026,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 3855350.0,
-            "trade_dollar_volume": 404233447.5,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "88.09",
+            "t_value": 104.85,
+            "p_value": 19.026
         },
         {
             "Stock_symbol": "TPR",
-            "start_price": 36.21,
-            "end_price": 42.89,
-            "pct_change": 18.4479,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 2315258.0,
-            "trade_dollar_volume": 99301415.62,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "36.21",
+            "t_value": 42.89,
+            "p_value": 18.4479
         },
         {
             "Stock_symbol": "TGT",
-            "start_price": 214.41,
-            "end_price": 166.06,
-            "pct_change": -22.5503,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 2744397.0,
-            "trade_dollar_volume": 455734565.8,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "214.41",
+            "t_value": 166.06,
+            "p_value": -22.5503
         },
         {
             "Stock_symbol": "TSLA",
-            "start_price": 381.8167,
-            "end_price": 194.77,
-            "pct_change": -48.9886,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 169239000.0,
-            "trade_dollar_volume": 32962680030.0,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "381.8167",
+            "t_value": 194.77,
+            "p_value": -48.9886
         },
         {
             "Stock_symbol": "TJX",
-            "start_price": 62.07,
-            "end_price": 78.86,
-            "pct_change": 27.0501,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 4464540.0,
-            "trade_dollar_volume": 352073624.4,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "62.07",
+            "t_value": 78.86,
+            "p_value": 27.0501
         },
         {
             "Stock_symbol": "TSCO",
-            "start_price": 227.68,
-            "end_price": 241.66,
-            "pct_change": 6.1402,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 1057595.0,
-            "trade_dollar_volume": 255578407.7,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "227.68",
+            "t_value": 241.66,
+            "p_value": 6.1402
         },
         {
             "Stock_symbol": "ULTA",
-            "start_price": 398.62,
-            "end_price": 551.19,
-            "pct_change": 38.2745,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 551409.0,
-            "trade_dollar_volume": 303931126.7,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "398.62",
+            "t_value": 551.19,
+            "p_value": 38.2745
         },
         {
             "Stock_symbol": "VFC",
-            "start_price": 56.93,
-            "end_price": 22.55,
-            "pct_change": -60.39,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 6140293.0,
-            "trade_dollar_volume": 138463607.2,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "56.93",
+            "t_value": 22.55,
+            "p_value": -60.39
         },
         {
             "Stock_symbol": "WHR",
-            "start_price": 175.09,
-            "end_price": 131.71,
-            "pct_change": -24.7758,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 564399.0,
-            "trade_dollar_volume": 74336992.29,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "175.09",
+            "t_value": 131.71,
+            "p_value": -24.7758
         },
         {
             "Stock_symbol": "WYNN",
-            "start_price": 81.84,
-            "end_price": 113.33,
-            "pct_change": 38.4775,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 3743623.0,
-            "trade_dollar_volume": 424264794.6,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "81.84",
+            "t_value": 113.33,
+            "p_value": 38.4775
         },
         {
             "Stock_symbol": "YUM",
-            "start_price": 117.7,
-            "end_price": 133.21,
-            "pct_change": 13.1776,
-            "sector_pct_change": -4.2561,
-            "stock_trade_volume": 1299251.0,
-            "trade_dollar_volume": 173073225.7,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "117.7",
+            "t_value": 133.21,
+            "p_value": 13.1776
         },
         {
             "Stock_symbol": "AAPL",
-            "start_price": 178.44,
-            "end_price": 166.17,
-            "pct_change": -6.8763,
-            "sector_pct_change": -6.8763,
-            "stock_trade_volume": 56976187.0,
-            "trade_dollar_volume": 9467732994.0,
-            "GICS_Sector": "Information_Technology"
+            "GICS_Sector": "178.44",
+            "t_value": 166.17,
+            "p_value": -6.8763
         },
         {
             "Stock_symbol": "AMZN",
-            "start_price": 168.3465,
-            "end_price": 102.41,
-            "pct_change": -39.1671,
-            "sector_pct_change": -39.1671,
-            "stock_trade_volume": 41135733.0,
-            "trade_dollar_volume": 4212710417.0,
-            "GICS_Sector": "Consumer_Discretionary"
+            "GICS_Sector": "168.3465",
+            "t_value": 102.41,
+            "p_value": -39.1671
         },
         {
             "Stock_symbol": "NFLX",
-            "start_price": 391.5,
-            "end_price": 348.28,
-            "pct_change": -11.0396,
-            "sector_pct_change": -11.0396,
-            "stock_trade_volume": 4413650.0,
-            "trade_dollar_volume": 1537186022.0,
-            "GICS_Sector": "Communication_Services"
+            "GICS_Sector": "391.5",
+            "t_value": 348.28,
+            "p_value": -11.0396
         },
         {
             "Stock_symbol": "GOOG",
-            "start_price": 143.6425,
-            "end_price": 104.91,
-            "pct_change": -26.9645,
-            "sector_pct_change": -26.9645,
-            "stock_trade_volume": 20719861.0,
-            "trade_dollar_volume": 2173720618.0,
-            "GICS_Sector": "Communication_Services"
+            "GICS_Sector": "143.6425",
+            "t_value": 104.91,
+            "p_value": -26.9645
         },
         {
             "Stock_symbol": "GOOGL",
-            "start_price": 142.9715,
-            "end_price": 104.36,
-            "pct_change": -27.0064,
-            "sector_pct_change": -27.0064,
-            "stock_trade_volume": 25035399.0,
-            "trade_dollar_volume": 2612694240.0,
-            "GICS_Sector": "Communication_Services"
+            "GICS_Sector": "142.9715",
+            "t_value": 104.36,
+            "p_value": -27.0064
         },
         {
             "Stock_symbol": "FB",
-            "start_price": 233.89,
-            "end_price": 213.07,
-            "pct_change": -8.9016,
-            "sector_pct_change": -8.9016,
-            "stock_trade_volume": 17924613.0,
-            "trade_dollar_volume": 3819197292.0,
-            "GICS_Sector": "Communication_Services"
+            "GICS_Sector": "233.89",
+            "t_value": 213.07,
+            "p_value": -8.9016
         }
     ]
 }

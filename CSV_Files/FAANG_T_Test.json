@@ -1,0 +1,174 @@
+{
+    "names": [
+        "AAPL",
+        "AAPL",
+        "AAPL",
+        "AAPL",
+        "AMZN",
+        "AMZN",
+        "AMZN",
+        "AMZN",
+        "FB",
+        "FB",
+        "FB",
+        "FB",
+        "GOOG",
+        "GOOG",
+        "GOOG",
+        "GOOG",
+        "GOOGL",
+        "GOOGL",
+        "GOOGL",
+        "GOOGL",
+        "NFLX",
+        "NFLX",
+        "NFLX",
+        "NFLX"
+    ],
+    "metadata": [
+        {
+            "Stock_symbol": "AAPL",
+            "GICS_Sector": "Consumer_Discretionary",
+            "t_value": -0.711,
+            "p_value": 0.48
+        },
+        {
+            "Stock_symbol": "AAPL",
+            "GICS_Sector": "Information_Technology",
+            "t_value": 0.397,
+            "p_value": 0.693
+        },
+        {
+            "Stock_symbol": "AAPL",
+            "GICS_Sector": "Consumer_Staples",
+            "t_value": -2.438,
+            "p_value": 0.02
+        },
+        {
+            "Stock_symbol": "AAPL",
+            "GICS_Sector": "Communication_Services",
+            "t_value": 3.0,
+            "p_value": 0.007
+        },
+        {
+            "Stock_symbol": "AMZN",
+            "GICS_Sector": "Consumer_Discretionary",
+            "t_value": -9.479,
+            "p_value": 0.0
+        },
+        {
+            "Stock_symbol": "AMZN",
+            "GICS_Sector": "Information_Technology",
+            "t_value": -16.705,
+            "p_value": 0.0
+        },
+        {
+            "Stock_symbol": "AMZN",
+            "GICS_Sector": "Consumer_Staples",
+            "t_value": -12.201,
+            "p_value": 0.0
+        },
+        {
+            "Stock_symbol": "AMZN",
+            "GICS_Sector": "Communication_Services",
+            "t_value": -2.529,
+            "p_value": 0.02
+        },
+        {
+            "Stock_symbol": "FB",
+            "GICS_Sector": "Consumer_Discretionary",
+            "t_value": -1.261,
+            "p_value": 0.213
+        },
+        {
+            "Stock_symbol": "FB",
+            "GICS_Sector": "Information_Technology",
+            "t_value": -0.676,
+            "p_value": 0.501
+        },
+        {
+            "Stock_symbol": "FB",
+            "GICS_Sector": "Consumer_Staples",
+            "t_value": -3.051,
+            "p_value": 0.005
+        },
+        {
+            "Stock_symbol": "FB",
+            "GICS_Sector": "Communication_Services",
+            "t_value": 2.654,
+            "p_value": 0.016
+        },
+        {
+            "Stock_symbol": "GOOG",
+            "GICS_Sector": "Consumer_Discretionary",
+            "t_value": -6.166,
+            "p_value": 0.0
+        },
+        {
+            "Stock_symbol": "GOOG",
+            "GICS_Sector": "Information_Technology",
+            "t_value": -10.242,
+            "p_value": 0.0
+        },
+        {
+            "Stock_symbol": "GOOG",
+            "GICS_Sector": "Consumer_Staples",
+            "t_value": -8.512,
+            "p_value": 0.0
+        },
+        {
+            "Stock_symbol": "GOOG",
+            "GICS_Sector": "Communication_Services",
+            "t_value": -0.44,
+            "p_value": 0.665
+        },
+        {
+            "Stock_symbol": "GOOGL",
+            "GICS_Sector": "Consumer_Discretionary",
+            "t_value": -6.177,
+            "p_value": 0.0
+        },
+        {
+            "Stock_symbol": "GOOGL",
+            "GICS_Sector": "Information_Technology",
+            "t_value": -10.264,
+            "p_value": 0.0
+        },
+        {
+            "Stock_symbol": "GOOGL",
+            "GICS_Sector": "Consumer_Staples",
+            "t_value": -8.524,
+            "p_value": 0.0
+        },
+        {
+            "Stock_symbol": "GOOGL",
+            "GICS_Sector": "Communication_Services",
+            "t_value": -0.447,
+            "p_value": 0.66
+        },
+        {
+            "Stock_symbol": "NFLX",
+            "GICS_Sector": "Consumer_Discretionary",
+            "t_value": -1.842,
+            "p_value": 0.071
+        },
+        {
+            "Stock_symbol": "NFLX",
+            "GICS_Sector": "Information_Technology",
+            "t_value": -1.808,
+            "p_value": 0.075
+        },
+        {
+            "Stock_symbol": "NFLX",
+            "GICS_Sector": "Consumer_Staples",
+            "t_value": -3.697,
+            "p_value": 0.001
+        },
+        {
+            "Stock_symbol": "NFLX",
+            "GICS_Sector": "Communication_Services",
+            "t_value": 2.287,
+            "p_value": 0.034
+        }
+    ]
+}
