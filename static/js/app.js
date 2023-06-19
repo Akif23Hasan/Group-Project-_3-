@@ -91,7 +91,7 @@ function init() {
       NFLX: "Netflix",
       GOOG: "Alphabet(Class C)",
       GOOGL: "Alphabet(Class A)",
-      FB: "Facebook."
+      FB: "Facebook"
     };
 
     // Filter stock symbols to only include "AAPL", "AMZN", "NFLX", "GOOG", "GOOGL", and "FB"
@@ -114,8 +114,10 @@ function init() {
     t_test_bar(startingstock);
     trade_bar(startingstock);
     pieChart(startingstock);
-    barChart(startingstock);
+    // barChart(startingstock);
 
+    // Fetch curremt stock
+    fetchCurrentStock(startingstock);
     // Fetch news for the initial stock
     fetchNews(startingstock);
 
@@ -125,66 +127,66 @@ function init() {
 }
 
 
-// Function that builds the line chart
-function barChart(stock) {
-  // Use D3 to retrieve all of the data
-  d3.json(sector_url).then((data) => {
-    // Retrieve all sample data
-    let stockData = data.metadata;
-    // Filter based on the value of the stock
-    let value = stockData.filter(result => result.Stock_symbol == stock)[0];
-    // Get the opening and closing price
-    let { start_price, end_price, pct_change } = value;
-    // Log the data to the console
-    // console.log(start_price, end_price, pct_change);
+// // Function that builds the line chart
+// function barChart(stock) {
+//   // Use D3 to retrieve all of the data
+//   d3.json(sector_url).then((data) => {
+//     // Retrieve all sample data
+//     let stockData = data.metadata;
+//     // Filter based on the value of the stock
+//     let value = stockData.filter(result => result.Stock_symbol == stock)[0];
+//     // Get the opening and closing price
+//     let { start_price, end_price, pct_change } = value;
+//     // Log the data to the console
+//     // console.log(start_price, end_price, pct_change);
 
-    // Set up the trace for the bar chart
-    let trace1 = {
-      x: ['Opening', 'Closing'],
-      y: [start_price, end_price],
-      type: "bar",
-      marker: {
-        color: ["#B3C100", "#CED2CC"] // Earth tone colors for bars
-      },
-      name: "Price"
-    };
+//     // Set up the trace for the bar chart
+//     let trace1 = {
+//       x: ['Opening', 'Closing'],
+//       y: [start_price, end_price],
+//       type: "bar",
+//       marker: {
+//         color: ["#B3C100", "#CED2CC"] // Earth tone colors for bars
+//       },
+//       name: "Price"
+//     };
 
-    // Set up the trace for the pct_change line chart with trendline
-    let trace2 = {
-      x: ['Opening', 'Closing'],
-      y: [pct_change],
-      type: "scatter",
-      mode: "lines+markers",
-      yaxis: 'y2',
-      name: "Percent Change",
-      line: {
-        shape: 'spline',
-        color: "#23282D" // Earth tone color for the line
-      }
-    };
+//     // Set up the trace for the pct_change line chart with trendline
+//     let trace2 = {
+//       x: ['Opening', 'Closing'],
+//       y: [pct_change],
+//       type: "scatter",
+//       mode: "lines+markers",
+//       yaxis: 'y2',
+//       name: "Percent Change",
+//       line: {
+//         shape: 'spline',
+//         color: "#23282D" // Earth tone color for the line
+//       }
+//     };
 
-    // Setup the layout
-    let layout = {
-      title: `${stock} Stock Opening and Closing Prices`,
-      xaxis: {
-        title: "Date",
-        ticktext: ['Opening', 'Closing'],
-        tickvals: [0, 1]
-      },
-      yaxis: {
-        title: "Price"
-      },
-      yaxis2: {
-        title: "Percent Change",
-        overlaying: 'y',
-        side: 'right'
-      }
-    };
+//     // Setup the layout
+//     let layout = {
+//       title: `${stock} Stock Opening and Closing Prices`,
+//       xaxis: {
+//         title: "Date",
+//         ticktext: ['Opening', 'Closing'],
+//         tickvals: [0, 1]
+//       },
+//       yaxis: {
+//         title: "Price"
+//       },
+//       yaxis2: {
+//         title: "Percent Change",
+//         overlaying: 'y',
+//         side: 'right'
+//       }
+//     };
 
-    // Call Plotly to plot the bar chart with the pct_change line chart
-    Plotly.newPlot("bar", [trace1, trace2], layout);
-  });
-}
+//     // Call Plotly to plot the bar chart with the pct_change line chart
+//     Plotly.newPlot("bar", [trace1, trace2], layout);
+//   });
+// }
 
 // Function that builds the pie chart
 function pieChart(stock) {
@@ -272,9 +274,6 @@ function t_test_bar(stock) {
         color: "red",
       },
     };
-
-    // let trace_p_data = [trace_p];
-    // let trace_p_yValue = [trace_p2];
 
     // Setup the layout
     let layout_p = {
@@ -396,24 +395,101 @@ function imagelogo(stock) {
   }
 }
 
-
 // Fetching the daily stock 
-// function fetchCurrentStock(stock) {
-//   const apiKey = "Paste The API_Key From The api_keys.py file";
-//   const alphaStockUrl = `https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY_EXTENDED&symbol=${stock}&interval=15min&slice=year1month2&apikey=${apiKey}`;
-//   console.log(alphaStockUrl);
+let stockChart = null; // Variable to store the chart instance
 
-//   const {StringStream} = require("scramjet");
-//   const request = require("request");
+function fetchCurrentStock(stock) {
+  if (stock === "FB") stock = "Meta";
+  const apiKey = "UOGKFS4PFYPO53WA";
+  const alphaStockUrl = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${stock}&outputsize=compact&apikey=${apiKey}`;
 
-//   request.get(alphaStockUrl)
-//     .pipe(new StringStream())
-//     .CSVParse()                                   // parse CSV output into row objects
-//     .consume(object => console.log("Row:", object))
-//     .then(() => console.log("success"));
+  fetch(alphaStockUrl)
+  .then(response => response.json())
+  .then(data => {
+    const timeSeries = data['Time Series (Daily)'];
+    const dates = [];
+    const closingPrices = [];
+    const volumes = [];
 
+    // Loop through each daily entry in the time series
+    for (const date in timeSeries) {
+      const dailyData = timeSeries[date];
+      const closingPrice = parseFloat(dailyData['4. close']);
+      const volume = parseInt(dailyData['5. volume']);
 
-// }
+      dates.unshift(date); // Reverse the order of dates
+      closingPrices.unshift(closingPrice);
+      volumes.unshift(volume);
+    }
+
+    // Destroy the existing chart if it exists
+    if (stockChart) {
+      stockChart.destroy();
+    }
+
+    // Create the combined graph using Chart.js
+    const ctx = document.getElementById('stockChart').getContext('2d');
+    stockChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: dates,
+        datasets: [
+          {
+            label: 'Closing Price',
+            data: closingPrices,
+            yAxisID: 'y1',
+            type: 'line',
+            borderColor: '#B3C100',
+            fill: false
+          },
+          {
+            label: 'Volume',
+            data: volumes,
+            yAxisID: 'y2',
+            backgroundColor: '#6B6D51'
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        title: {
+          display: true,
+          text: `${stock} Stock Closing Price and Volume`
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            type: 'linear',
+            display: true,
+            position: 'left',
+            id: 'y1',
+            title: {
+              display: true,
+              text: 'Closing Price ($)'
+            }
+          },
+          y2: {
+            beginAtZero: true,
+            type: 'linear',
+            display: true,
+            position: 'right',
+            grid: {
+              drawOnChartArea: false
+            },
+            title: {
+              display: true,
+              text: 'Volume'
+            }
+          }
+        }
+      }
+    });
+  })
+  .catch(error => {
+    console.log('Error:', error);
+  });
+}
+
 
 // Function that updates dashboard when sample is changed
 function optionChanged(value) {
@@ -423,13 +499,13 @@ function optionChanged(value) {
   t_test_bar(value);
   trade_bar(value);
   pieChart(value);
-  barChart(value);
+  // barChart(value);
+  //Fetch image and display it
+  imagelogo(value);
   // Fetch news for the selected stock
   fetchNews(value);
-  // fetchCurrentStock(value)
-  //Fetch image and display it
-  imagelogo(value)
-  
+  // Fetch current stock 
+  fetchCurrentStock(value)
 }
 
 // Call the initialize function
