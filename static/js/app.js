@@ -8,7 +8,7 @@ d3.json(sector_url).then(function(data) {
 
 // Fetch the latest news headlines and summaries for the selected stock
 function fetchNews(stock) {
-  const apiKey = "PasteTheApiKeyHereBeforeRunning";
+  const apiKey = "i4C1V3RjLgFoMzPvyapdYUYR4Cif6zORLppfZVsS";
   const newsUrl = `https://api.marketaux.com/v1/news/all?symbols=${stock}&filter_entities=true&language=en&sentiment=positive&api_token=${apiKey}`;
   console.log(newsUrl);
 
@@ -29,7 +29,7 @@ function fetchNews(stock) {
 
       const tableHeader = newsTable.append("tr");
       tableHeader.selectAll("th")
-        .data(["Headline", "Summary", "Link"])
+        .data([`${stock} Headline`, "Summary", "Link"])
         .enter()
         .append("th")
         .text(d => d)
@@ -288,7 +288,7 @@ function t_test_bar(stock) {
       },
       yaxis: {
         title: "p-value",
-        range: [0, 0.1], // Set the range of y-axis, with 0.1 as the maximum value
+        // range: [0, 0.1], // Set the range of y-axis, with 0.1 as the maximum value
       },
     };
 
@@ -427,67 +427,72 @@ function fetchCurrentStock(stock) {
       stockChart.destroy();
     }
 
-    // Create the combined graph using Chart.js
-    const ctx = document.getElementById('stockChart').getContext('2d');
-    stockChart = new Chart(ctx, {
-      type: 'bar',
-      data: {
-        labels: dates,
-        datasets: [
-          {
-            label: 'Closing Price',
-            data: closingPrices,
-            yAxisID: 'y1',
-            type: 'line',
-            borderColor: '#B3C100',
-            fill: false
-          },
-          {
-            label: 'Volume',
-            data: volumes,
-            yAxisID: 'y2',
-            backgroundColor: '#6B6D51'
-          }
-        ]
-      },
-      options: {
-        responsive: true,
-        title: {
-          display: true,
-          text: `${stock} Stock Closing Price and Volume`
+      // Create the combined graph using Chart.js
+      const ctx = document.getElementById('stockChart').getContext('2d');
+      stockChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: dates,
+          datasets: [
+            {
+              label: 'Closing Price',
+              data: closingPrices,
+              yAxisID: 'y1',
+              type: 'line',
+              borderColor: "#E2725B",
+              fill: false
+            },
+            {
+              label: 'Volume',
+              data: volumes,
+              yAxisID: 'y2',
+              backgroundColor: "#A3B18A" 
+            }
+          ]
         },
-        scales: {
-          y: {
-            beginAtZero: true,
-            type: 'linear',
-            display: true,
-            position: 'left',
-            id: 'y1',
+        options: {
+          responsive: true,
+          plugins: {
             title: {
               display: true,
-              text: 'Closing Price ($)'
+              text: `${stock}: Current Closing Stock Prices (USD$) and Volume traded`,
+              font: {
+                size: 16
+              }
             }
           },
-          y2: {
-            beginAtZero: true,
-            type: 'linear',
-            display: true,
-            position: 'right',
-            grid: {
-              drawOnChartArea: false
-            },
-            title: {
+          scales: {
+            y: {
+              beginAtZero: true,
+              type: 'linear',
               display: true,
-              text: 'Volume'
+              position: 'left',
+              id: 'y1',
+              title: {
+                display: true,
+                text: 'Closing Price ($)'
+              }
+            },
+            y2: {
+              beginAtZero: true,
+              type: 'linear',
+              display: true,
+              position: 'right',
+              grid: {
+                drawOnChartArea: false
+              },
+              title: {
+                display: true,
+                text: 'Volume'
+              }
             }
           }
         }
-      }
+      });
+    })
+    .catch(error => {
+      console.log('Error:', error);
     });
-  })
-  .catch(error => {
-    console.log('Error:', error);
-  });
 }
 
 
