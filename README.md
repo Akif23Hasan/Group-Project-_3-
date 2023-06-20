@@ -11,7 +11,7 @@ To accomplish this, we will utilize the Polygon.io API to create a database of t
 ## Goals
 1) Investigate how FAANG stocks skew their Global Industry Classification Standard (GICS) sector behavior and determine how naturally each stock would fit into a sector where the other stocks are not present. This comparison will consider a t-test for each stock against the relevant sector.
 2) Identify correlations and patterns between the performance of FAANG stocks and market indices to gain insights into the influence of these tech giants on the overall market.
-3) Visualize the performance and impact of each FAANG stock by analyzing their price changes and trade volumes over a defined period. Create an interactive dashboard to provide a comprehensive and visually engaging overview of the stocks' performance for easy analysis and comparison.
+3) Visualize the performance and impact of each FAANG stock by analyzing its price changes and trade volumes over a defined period. Create an interactive dashboard to provide a comprehensive and visually engaging overview of the stocks' performance for easy analysis and comparison.
 
 ## Research Questions
 1) How does the premium price of FAANG stocks align with their GICS classification? Do these stocks exhibit the traits of another GICS sector?
@@ -33,13 +33,21 @@ To accomplish this, we will utilize the Polygon.io API to create a database of t
 * The final visualization should ideally include at least three views.
 
 ## Project Steps
-* Read the S&P 500 categorization list of stock by ticker code and their GICS Sector.
-* Fill a list for each relevant sector with the stock symbols and then add to this list start and end prices and average price and pervcentage change.
-* Make comparisons of FAANG stock against each sector and run two sample t-tests to check fit by change in value.
-* Export all data as csv files.
+**Richard Soos**
+*Read the S&P 500 categorization list of stocks by ticker code and their GICS Sector.
+* Fill a list for each relevant sector with the stock symbols and then add to this list start and end prices and average price and percentage change.
+* Make comparisons of FAANG stock against each sector and run two-sample t-tests to check the fit by a change in value.
+* Export all data as CSV files.
+
+**Tao and Suvi**
 * Need to add in dotpoints from data extraction to data transformation to visuldaition process
 * Tao and Suvi to update the actual sql code 
-* in the visulations bit show the images and potentially a GIF of the dashboard in action.
+
+**Akif and Graham**
+* Created the resting API flask to host two different data sets needed for the data visualization
+* Created an interactive dashboard that presents 4 graphs and a news feed that changes when the user selects one of six different stocks from FAANG
+* The script also sources data via API call from two different data sources 
+
 
 ## GitHub
 * https://github.com/Akif23Hasan/Group8-Project-_3-FAANG_StockAnalysis
