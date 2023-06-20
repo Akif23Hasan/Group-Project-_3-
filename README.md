@@ -33,6 +33,10 @@ To accomplish this, we will utilize the Polygon.io API to create a database of t
 * The final visualization should ideally include at least three views.
 
 ## Project Steps
+* Read the S&P 500 categorization list of stock by ticker code and their GICS Sector.
+* Fill a list for each relevant sector with the stock symbols and then add to this list start and end prices and average price and pervcentage change.
+* Make comparisons of FAANG stock against each sector and run two sample t-tests to check fit by change in value.
+* Export all data as csv files.
 * Need to add in dotpoints from data extraction to data transformation to visuldaition process
 * Tao and Suvi to update the actual sql code 
 * in the visulations bit show the images and potentially a GIF of the dashboard in action.
