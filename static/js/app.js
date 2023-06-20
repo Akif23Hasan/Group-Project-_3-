@@ -8,7 +8,7 @@ d3.json(sector_url).then(function(data) {
 
 // Fetch the latest news headlines and summaries for the selected stock
 function fetchNews(stock) {
-  const apiKey = "i4C1V3RjLgFoMzPvyapdYUYR4Cif6zORLppfZVsS";
+  const apiKey = "API KEY HERE";
   const newsUrl = `https://api.marketaux.com/v1/news/all?symbols=${stock}&filter_entities=true&language=en&sentiment=positive&api_token=${apiKey}`;
   console.log(newsUrl);
 
@@ -114,10 +114,10 @@ function init() {
     t_test_bar(startingstock);
     trade_bar(startingstock);
     pieChart(startingstock);
-    // barChart(startingstock);
 
     // Fetch curremt stock
     fetchCurrentStock(startingstock);
+
     // Fetch news for the initial stock
     fetchNews(startingstock);
 
@@ -125,68 +125,6 @@ function init() {
     imagelogo(startingstock);
   });
 }
-
-
-// // Function that builds the line chart
-// function barChart(stock) {
-//   // Use D3 to retrieve all of the data
-//   d3.json(sector_url).then((data) => {
-//     // Retrieve all sample data
-//     let stockData = data.metadata;
-//     // Filter based on the value of the stock
-//     let value = stockData.filter(result => result.Stock_symbol == stock)[0];
-//     // Get the opening and closing price
-//     let { start_price, end_price, pct_change } = value;
-//     // Log the data to the console
-//     // console.log(start_price, end_price, pct_change);
-
-//     // Set up the trace for the bar chart
-//     let trace1 = {
-//       x: ['Opening', 'Closing'],
-//       y: [start_price, end_price],
-//       type: "bar",
-//       marker: {
-//         color: ["#B3C100", "#CED2CC"] // Earth tone colors for bars
-//       },
-//       name: "Price"
-//     };
-
-//     // Set up the trace for the pct_change line chart with trendline
-//     let trace2 = {
-//       x: ['Opening', 'Closing'],
-//       y: [pct_change],
-//       type: "scatter",
-//       mode: "lines+markers",
-//       yaxis: 'y2',
-//       name: "Percent Change",
-//       line: {
-//         shape: 'spline',
-//         color: "#23282D" // Earth tone color for the line
-//       }
-//     };
-
-//     // Setup the layout
-//     let layout = {
-//       title: `${stock} Stock Opening and Closing Prices`,
-//       xaxis: {
-//         title: "Date",
-//         ticktext: ['Opening', 'Closing'],
-//         tickvals: [0, 1]
-//       },
-//       yaxis: {
-//         title: "Price"
-//       },
-//       yaxis2: {
-//         title: "Percent Change",
-//         overlaying: 'y',
-//         side: 'right'
-//       }
-//     };
-
-//     // Call Plotly to plot the bar chart with the pct_change line chart
-//     Plotly.newPlot("bar", [trace1, trace2], layout);
-//   });
-// }
 
 // Function that builds the pie chart
 function pieChart(stock) {
@@ -288,7 +226,6 @@ function t_test_bar(stock) {
       },
       yaxis: {
         title: "p-value",
-        // range: [0, 0.1], // Set the range of y-axis, with 0.1 as the maximum value
       },
     };
 
@@ -395,12 +332,12 @@ function imagelogo(stock) {
   }
 }
 
-// Fetching the daily stock 
+// Fetching the daily stock
 let stockChart = null; // Variable to store the chart instance
 
 function fetchCurrentStock(stock) {
   if (stock === "FB") stock = "Meta";
-  const apiKey = "UOGKFS4PFYPO53WA";
+  const apiKey = "API KEY HERE";
   const alphaStockUrl = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${stock}&outputsize=compact&apikey=${apiKey}`;
 
   fetch(alphaStockUrl)
@@ -427,72 +364,89 @@ function fetchCurrentStock(stock) {
       stockChart.destroy();
     }
 
-      // Create the combined graph using Chart.js
-      const ctx = document.getElementById('stockChart').getContext('2d');
-      stockChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-          labels: dates,
-          datasets: [
-            {
-              label: 'Closing Price',
-              data: closingPrices,
-              yAxisID: 'y1',
-              type: 'line',
-              borderColor: "#E2725B",
-              fill: false
-            },
-            {
-              label: 'Volume',
-              data: volumes,
-              yAxisID: 'y2',
-              backgroundColor: "#A3B18A" 
-            }
-          ]
-        },
-        options: {
-          responsive: true,
-          plugins: {
-            title: {
-              display: true,
-              text: `${stock}: Current Closing Stock Prices (USD$) and Volume traded`,
-              font: {
-                size: 16
-              }
+    // Create the combined graph using Chart.js
+    const ctx = document.getElementById('stockChart').getContext('2d');
+    stockChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: dates,
+        datasets: [
+          {
+            label: 'Closing Price',
+            data: closingPrices,
+            yAxisID: 'y1',
+            type: 'line',
+            borderColor: "#E2725B",
+            fill: false
+          },
+          {
+            label: 'Volume',
+            data: volumes,
+            yAxisID: 'y2',
+            backgroundColor: "#A3B18A" 
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          title: {
+            display: true,
+            text: `${stock}: Current Closing Stock Prices (USD$) and Volume traded`,
+            font: {
+              size: 16
             }
           },
-          scales: {
-            y: {
-              beginAtZero: true,
-              type: 'linear',
-              display: true,
-              position: 'left',
-              id: 'y1',
-              title: {
-                display: true,
-                text: 'Closing Price ($)'
-              }
+          zoom: {
+            pan: {
+              enabled: true,
+              mode: 'x',
+              speed: 10,
+              threshold: 10
             },
-            y2: {
-              beginAtZero: true,
-              type: 'linear',
-              display: true,
-              position: 'right',
-              grid: {
-                drawOnChartArea: false
+            zoom: {
+              wheel: {
+                enabled: true,
               },
-              title: {
-                display: true,
-                text: 'Volume'
-              }
+              pinch: {
+                enabled: true
+              },
+              mode: 'x'
+            }
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            type: 'linear',
+            display: true,
+            position: 'left',
+            id: 'y1',
+            title: {
+              display: true,
+              text: 'Closing Price ($)'
+            }
+          },
+          y2: {
+            beginAtZero: true,
+            type: 'linear',
+            display: true,
+            position: 'right',
+            grid: {
+              drawOnChartArea: false
+            },
+            title: {
+              display: true,
+              text: 'Volume'
             }
           }
         }
-      });
-    })
-    .catch(error => {
-      console.log('Error:', error);
+      }
     });
+  })
+  .catch(error => {
+    console.log('Error:', error);
+  });
 }
 
 
@@ -504,11 +458,13 @@ function optionChanged(value) {
   t_test_bar(value);
   trade_bar(value);
   pieChart(value);
-  // barChart(value);
+
   //Fetch image and display it
   imagelogo(value);
+
   // Fetch news for the selected stock
   fetchNews(value);
+  
   // Fetch current stock 
   fetchCurrentStock(value)
 }
