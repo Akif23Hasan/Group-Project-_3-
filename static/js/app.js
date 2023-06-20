@@ -271,7 +271,7 @@ function t_test_bar(stock) {
       type: "line",
           name: "p-Value threshold",
       line: {
-        color: "red",
+        color: "blue",
       },
     };
 
