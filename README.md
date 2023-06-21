@@ -39,7 +39,7 @@ To accomplish this, we will utilize the Polygon.io API to create a database of t
 * Make comparisons of FAANG stock against each sector and run two-sample t-tests to check the fit by a change in value.
 * Export all data as CSV files.
 
-**Tao and Suvi**
+**Tao and Suraksha**
 * Extracted data from the provided CSV files and transformed into one complete CSV file performing data cleaning
 * Designed Database Schema and imported all the data from csv files in database
 * Created Entity Relationship Diagram
