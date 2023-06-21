@@ -11,21 +11,34 @@
 
 <body>
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12 jumbotron text-center">
-        <h1>FAANG Stock Analysis</h1>
-        <h2>Facebook (Meta), Apple, Amazon, Netflix, Google</h2>
-        <p>Use the interactive charts below to explore how these companies impact their respective sectors and the S&P500</p>
-        <p>Data analysed from 4 April 2022 to 3 April 2023</p>
+    <div class="row" style="background-color: #E8D6AC;">
+      <div class="col-md-12 jumbotron text-center" style="background-color: #A3B18A; color: #000000;">
+        <div class="row">
+          <div class="col-md-2">
+            <img src="https://g.foolcdn.com/art/companylogos/square/%5Egspc.png" alt="S&P500 Logo" style="width: 100%; height: auto;">
+          </div>
+          <div class="col-md-8">
+            <h1>FAANG Stock Analysis</h1>
+            <h2>Facebook (Meta), Apple, Amazon, Netflix, Google</h2>
+            <p>Use the interactive charts below to explore how these companies impact their respective sectors and the S&P500</p>
+            <p>Data analysed from 4 April 2022 to 3 April 2023</p>
+          </div>
+          <div class="col-md-2">
+            <img src="https://assets.cmcmarkets.com/images/FAANG-stocks_extra.webp" alt="FAANG Stocks Logo" style="width: 100%; height: auto;">
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+  </div>
     <div class="row">
       <div class="col-md-2">
-        <div class="well">
+        <div class="well" style="background-color: #A3B18A; color: #000000;">
           <div class="row">
             <div class="col-md-12">
-              <h5 style="word-break: break-all;">FAANG Stock selection:</h5>
+              <h4 style="word-break: break-all;">FAANG Stock Selection:</h4>
               <img id="logo-image" src="" alt="Company Logo" style="width: 100%; height: auto;">
+              <p id="gics-sector">Stock GICS Sector: </p>
             </div>
           </div>
           <div class="row">
@@ -35,11 +48,10 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-8 col-md-offset-0">
-          <div id="t_test_bar" style="height: 600px;"></div>
-        </div>
+      <div class="col-md-8 col-md-offset-0">
+        <div id="t_test_bar" style="height: 600px;"></div>
       </div>
+    </div>
 
       <div class="col-md-8 col-md-offset-2">
         <div style="padding: 20px;">

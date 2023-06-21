@@ -123,6 +123,9 @@ function init() {
 
     // Fetch image and display it
     imagelogo(startingstock);
+
+    //Fetch GICSSector
+    displayGICSSector(startingstock);
   });
 }
 
@@ -332,6 +335,31 @@ function imagelogo(stock) {
   }
 }
 
+function displayGICSSector(stock) {
+  let sector = "";
+
+  if (stock === "AAPL") {
+    sector = "Information Technology";
+  } else if (stock === "AMZN") {
+    sector = "Consumer Discretionary";
+  } else if (stock === "NFLX") {
+    sector = "Communication Services";
+  } else if (stock === "GOOG" || stock === "GOOGL") {
+    sector = "Communication Services";
+  } else if (stock === "FB") {
+    sector = "Communication Services";
+  }
+
+  // Display the sector
+  displaySector(sector);
+
+  function displaySector(sector) {
+    // Select the sector element and update its text
+    const sectorElement = d3.select("#gics-sector");
+    sectorElement.html("<span style='text-decoration: font-weight: bold;'>Stock GICS Sector: <span style='text-decoration: underline; font-weight: bold; color: #C45E2B;'>" + sector + "</span></span>");
+  } 
+}
+
 // Fetching the daily stock
 let stockChart = null; // Variable to store the chart instance
 
@@ -463,6 +491,9 @@ function optionChanged(value) {
 
   //Fetch image and display it
   imagelogo(value);
+
+  //Fetch GICSSector
+  displayGICSSector(value);
 
   // Fetch news for the selected stock
   fetchNews(value);
