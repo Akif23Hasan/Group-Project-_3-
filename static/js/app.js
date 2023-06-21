@@ -356,7 +356,9 @@ function displayGICSSector(stock) {
   function displaySector(sector) {
     // Select the sector element and update its text
     const sectorElement = d3.select("#gics-sector");
-    sectorElement.html("<span style='text-decoration: font-weight: bold;'>Stock GICS Sector: <span style='text-decoration: underline; font-weight: bold; color: #C45E2B;'>" + sector + "</span></span>");
+    sectorElement.html("<span style='text-decoration: font-weight: bold;'>Stock GICS Sector: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style='text-decoration: underline; font-weight: bold; color: #C45E2B;'>" + sector + "</span></span>");
   } 
 }
 
