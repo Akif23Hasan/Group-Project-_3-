@@ -163,7 +163,7 @@ function pieChart(stock) {
       values: values,
       type: "pie",
       marker: {
-        colors: ["#E2725B","#A3B18A", "#C45E2B", "#E8D6AC", "#6B6D51"]// Earth tone colors for pie slices
+        colors: ["#C45E2B","#E8D6AC", "#A3B18A", "#E2725B", "black"]// Earth tone colors for pie slices
       }
     };
 
@@ -197,7 +197,7 @@ function t_test_bar(stock) {
       y: pValues,
       type: "bar",
       marker: {
-        color: ["#E2725B","#A3B18A", "#C45E2B", "#E8D6AC", "#6B6D51" ]
+        color: ["#E2725B","#A3B18A", "#C45E2B", "#E8D6AC" ]
       },
       name: "p-Values",
     };
@@ -209,7 +209,7 @@ function t_test_bar(stock) {
       type: "line",
           name: "p-Value threshold",
       line: {
-        color: "blue",
+        color: "black",
       },
     };
 
@@ -281,7 +281,7 @@ function trade_bar(stock) {
       y: values,
       type: "bar",
       marker: {
-        color: ["#E2725B","#A3B18A", "#C45E2B", "#E8D6AC", "#6B6D51" ] // Earth tone colors for pie slices
+        color: ["#C45E2B","#E8D6AC", "#A3B18A", "#E2725B", "black" ] // Earth tone colors for pie slices
       }
     };
 
@@ -337,7 +337,7 @@ let stockChart = null; // Variable to store the chart instance
 
 function fetchCurrentStock(stock) {
   if (stock === "FB") stock = "Meta";
-  const apiKey = "API KEY HERE";
+  const apiKey = "API KET HERE";
   const alphaStockUrl = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${stock}&outputsize=compact&apikey=${apiKey}`;
 
   fetch(alphaStockUrl)
@@ -452,8 +452,10 @@ function fetchCurrentStock(stock) {
 
 // Function that updates dashboard when sample is changed
 function optionChanged(value) {
+  
   // Log the new value
   console.log(value);
+
   // Call all functions
   t_test_bar(value);
   trade_bar(value);
