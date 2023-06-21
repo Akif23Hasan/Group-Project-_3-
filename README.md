@@ -40,8 +40,10 @@ To accomplish this, we will utilize the Polygon.io API to create a database of t
 * Export all data as CSV files.
 
 **Tao and Suvi**
-* Need to add in dotpoints from data extraction to data transformation to visuldaition process
-* Tao and Suvi to update the actual sql code 
+* Extracted data from the provided CSV files and transformed into one complete CSV file performing data cleaning
+* Designed Database Schema and imported all the data from csv files in database
+* Created Entity Relationship Diagram
+* Worked on Python Flask API for the database connection and to load database files 
 
 **Akif and Graham**
 * Created the resting API flask to host two different data sets needed for the data visualization
