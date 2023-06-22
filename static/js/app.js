@@ -8,7 +8,7 @@ d3.json(sector_url).then(function(data) {
 
 // Fetch the latest news headlines and summaries for the selected stock
 function fetchNews(stock) {
-  const apiKey = "i4C1V3RjLgFoMzPvyapdYUYR4Cif6zORLppfZVsS";
+  const apiKey = "CONTACT PROJECT TEAM FOR API KEY";
   const newsUrl = `https://api.marketaux.com/v1/news/all?symbols=${stock}&filter_entities=true&language=en&sentiment=positive&api_token=${apiKey}`;
   console.log(newsUrl);
 
@@ -367,7 +367,7 @@ let stockChart = null; // Variable to store the chart instance
 
 function fetchCurrentStock(stock) {
   if (stock === "FB") stock = "Meta";
-  const apiKey = "UOGKFS4PFYPO53WA";
+  const apiKey = "CONTACT PROJECT TEAM FOR API KEY";
   const alphaStockUrl = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${stock}&outputsize=compact&apikey=${apiKey}`;
 
   fetch(alphaStockUrl)
