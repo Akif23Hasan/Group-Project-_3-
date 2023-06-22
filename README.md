@@ -59,8 +59,7 @@ To accomplish this, we will utilize the Polygon.io API to create a database of t
 ![Screenshot 2023-06-22 at 7 55 20 pm](https://github.com/Akif23Hasan/Group8-Project-_3-FAANG_StockAnalysis/assets/123386740/96763c4e-316e-4f7e-9e8f-8c0fdaa4650f)
 ![Screenshot 2023-06-22 at 7 55 32 pm](https://github.com/Akif23Hasan/Group8-Project-_3-FAANG_StockAnalysis/assets/123386740/b1ace9d7-be63-4764-8b76-f4d1578168cf)
 ![Screenshot 2023-06-22 at 7 55 40 pm](https://github.com/Akif23Hasan/Group8-Project-_3-FAANG_StockAnalysis/assets/123386740/d9dc380e-a4ab-42ee-8399-a0aa39b563bc)
-[
-](https://github.com/Akif23Hasan/Group8-Project-_3-FAANG_StockAnalysis/blob/main/Dashboard%20Visualizations/DashboardDemonstration%20.gif)https://github.com/Akif23Hasan/Group8-Project-_3-FAANG_StockAnalysis/blob/main/Dashboard%20Visualizations/DashboardDemonstration%20.gif
+![](https://github.com/Akif23Hasan/Group8-Project-_3-FAANG_StockAnalysis/blob/main/Dashboard%20Visualizations/DashboardDemonstration%20.gif)
 
 ## GitHub
 * https://github.com/Akif23Hasan/Group8-Project-_3-FAANG_StockAnalysis
