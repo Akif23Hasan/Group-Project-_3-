@@ -19,12 +19,16 @@ To accomplish this, we will utilize the Polygon.io API to create a database of t
 3) What correlations and patterns exist between FAANG stock performance and market indices? How do these tech giants influence the overall market?
 
 ## Datasource
+* Python v3.10
+* PgAdim (Postgres)
 * Polygon.io
 * Marketaux News
 * D3 JS
 * cdn.plot.ly/plotly-latest.min.js
 * https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
+* cdn.jsdelivr.net/npm/chart.js
 
+  
 ## Requirements
 * Visualizations must include a Python Flask-powered API, HTML/CSS, JavaScript, and at least one database (SQL, MongoDB, SQLite, etc.).
 * The project should include at least one JS library that has not been covered.
@@ -49,6 +53,12 @@ To accomplish this, we will utilize the Polygon.io API to create a database of t
 * Created the resting API flask to host two different data sets needed for the data visualization
 * Created an interactive dashboard that presents 4 graphs and a news feed that changes when the user selects one of six different stocks from FAANG
 * The script also sources data via API call from two different data sources 
+
+## Dashboard Visulisations
+![Screenshot 2023-06-22 at 7 55 09 pm](https://github.com/Akif23Hasan/Group8-Project-_3-FAANG_StockAnalysis/assets/123386740/8f0b9fa7-239a-4a2b-b8ee-98f9108cdf9a)
+![Screenshot 2023-06-22 at 7 55 20 pm](https://github.com/Akif23Hasan/Group8-Project-_3-FAANG_StockAnalysis/assets/123386740/96763c4e-316e-4f7e-9e8f-8c0fdaa4650f)
+![Screenshot 2023-06-22 at 7 55 32 pm](https://github.com/Akif23Hasan/Group8-Project-_3-FAANG_StockAnalysis/assets/123386740/b1ace9d7-be63-4764-8b76-f4d1578168cf)
+![Screenshot 2023-06-22 at 7 55 40 pm](https://github.com/Akif23Hasan/Group8-Project-_3-FAANG_StockAnalysis/assets/123386740/d9dc380e-a4ab-42ee-8399-a0aa39b563bc)
 
 
 ## GitHub
