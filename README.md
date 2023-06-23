@@ -42,6 +42,10 @@ To accomplish this, we will utilize the Polygon.io API to create a database of t
 * Fill a list for each relevant sector with the stock symbols and then add to this list start and end prices and average price and percentage change.
 * Make comparisons of FAANG stock against each sector and run two-sample t-tests to check the fit by a change in value.
 * Export all data as CSV files.
+* The python code is in the Jupyter notebook DataExtraction_cleaning/mainpy.ipynb
+* You will need to create a subdirectory called resources to run the ipynb. All output csv files will be spooled to resources subdirectory.
+* Please also include in the resources subfolder before runningh the python code the file sp500list.csv
+* as this has reference data file to categrosie stock symbols by Sector.
 
 **Tao and Suraksha**
 * Extracted data from the provided CSV files and transformed into one complete CSV file performing data cleaning
